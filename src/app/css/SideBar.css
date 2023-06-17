@@ -1,0 +1,65 @@
+.SideBar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 120vh;
+  width: 100vw;
+  z-index: 10;
+  background-color: white;
+  transform: translateX(120%);
+  opacity: 0;
+  transition: all 700ms ease-in-out;
+  overflow: hidden;
+  background-image: url(https://www.growyouragency.com/wp-content/uploads/2019/04/whales-Grow-Your-Agency.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position-x: 29rem;
+  font-weight: bold;
+}
+
+.slideIn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 120vh;
+  width: 100vw;
+  z-index: 10;
+  background-color: white;
+  transform: translateX(0%);
+  transition: all 700ms ease-in-out;
+  overflow: hidden;
+  background-image: url(https://www.growyouragency.com/wp-content/uploads/2019/04/whales-Grow-Your-Agency.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position-x: 29rem;
+  font-weight: bold;
+  opacity: 1;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+    transition: all 1000ms ease-in-out; /* Add transition property and duration */
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  
+  .contentIn {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  
+  
+  

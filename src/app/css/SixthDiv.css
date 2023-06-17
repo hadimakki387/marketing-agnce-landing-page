@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap'); 
+
+
+  .statsContent { 
+    text-align: center;
+  } 
+
+ 
+
+  .statsItems{ 
+    max-width: 1540px; 
+    width: 100%; 
+    display: inline-block; 
+    margin: auto; 
+    box-sizing: border-box; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    text-align: left;
+  } 
+
+  .statsItems { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-pack: space-between; 
+    -ms-flex-pack: space-between; 
+    justify-content: space-between; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center;
+  } 
+
+  .gy-home-info-col { 
+    width: 50%;
+  } 
+
+  .stats img { 
+    display: block;
+    font-family:   "Montserrat", sans-serif; 
+    font-size:   18px; 
+    line-height:   1.8; 
+    margin:   0; 
+    padding:   0; 
+    border:   0; 
+    color:   #000309;
+    max-width:  100%; 
+    height:  auto;
+  } 
+
+  .stats img  { 
+    position: absolute; 
+    width: 1000px; 
+    height: auto; 
+    left: -80px; 
+    top: 50%; 
+    -webkit-transform: translateY(-50%); 
+    -moz-transform: translateY(-50%); 
+    -o-transform: translateY(-50%); 
+    -ms-transform: translateY(-50%); 
+    transform: translateY(-50%); 
+    z-index: -1;
+  } 
+
+  .stats .statsItems { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-pack: space-between; 
+    -ms-flex-pack: space-between; 
+    justify-content: space-between; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center;
+  } 
+
+  .stats { 
+    background-image: url("https://www.growyouragency.com/wp-content/themes/GrowYourAgency/dist/stats_bubbles.d957a21c.jpg"); 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding-bottom: 340px; 
+    padding-top: 480px; 
+    background-repeat-x: no-repeat; 
+    background-repeat-y: no-repeat;
+  } 
+
+  .stats-col { 
+    text-align: center; 
+    min-width: 300px;
+  } 
+
+  .stats-col-percents { 
+    position: relative; 
+    display: inline-block;
+  } 
+
+  
+
+  .stats p  { 
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: white; 
+    font-weight: 700; 
+    padding-bottom: 40px;
+  } 
+
+  .stats img  { 
+    display: inline-block; 
+    margin: auto; 
+    max-width: 42px;
+  } 
+
+  .stats ul { 
+    box-sizing:   border-box;
+    font-family:  "Montserrat", sans-serif; 
+    font-size:  18px; 
+    line-height:  1.8; 
+    margin:  0; 
+    padding:  0; 
+    border:  0; 
+    color:  #000309;
+    list-style: none;
+  } 
+
+  .stats li { 
+    font-family:   "Montserrat", sans-serif; 
+    font-size:  18px; 
+    line-height:  1.8; 
+    margin:   0; 
+    padding:   0; 
+    border:   0; 
+    color:  #000309;
+    font-weight:  400;
+  } 
+
+  .gy-home-info ul li { 
+    padding-bottom: 40px; 
+    padding-left: 60px; 
+    position: relative; 
+    margin-right: 60px;
+  } 
+
+  .stats li:before  { 
+    position: absolute; 
+    width: 36px; 
+    height: 36px; 
+    top: 0; 
+    left: 0; 
+    background-image: url("https://www.growyouragency.com/wp-content/themes/GrowYourAgency/dist/check_icon.8bb9d12c.png"); 
+    background-position: center; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    content: ""; 
+    background-repeat-x: no-repeat; 
+    background-repeat-y: no-repeat;
+  } 
+
+
+  .stats span  { 
+    font-size: 75px; 
+    line-height: 0.9; 
+    letter-spacing: -0.1px; 
+    font-weight: 700; 
+    color: white; 
+    padding-bottom: 30px; 
+    display: inline-block;
+  } 
+
+  @media (max-width:990px){
+    .stats .statsItems{
+      display: grid;
+      justify-content: center;
+    }
+    .statsContent{
+      width: 100%;
+    }
+  }
+
+
+

@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
+
+.gy-home-info {
+  position: relative;
+  margin-bottom: 300px;
+  overflow: hidden;
+}
+
+.gy-home-info-eagle {
+  margin-bottom: 0;
+}
+
+.EagleEye {
+  text-align: center;
+  position: relative;
+}
+
+.EagleEyeWraper {
+  max-width: 1540px;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.EagleEyeWraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.EagleEyeItems {
+  width: 50%;
+}
+
+.EagleEyeImg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+  width: 1000px;
+}
+
+.EagleEyeImg {
+  height: auto;
+  z-index: -1;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 58px;
+  line-height: 0.9;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #272a31;
+  padding-bottom: 30px;
+  letter-spacing: -0.1px;
+}
+
+.EagleEyeItems h2 {
+  padding-bottom: 50px;
+}
+
+.EagleEyeItems p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.EagleEyeItems p {
+  max-width: 650px;
+  width: 100%;
+}
+
+.EagleEyeItems ul {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+  list-style: none;
+}
+
+.EagleEyeItems strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+}
+
+.EagleEyeItems li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+  font-weight: 400;
+}
+
+.EagleEyeItems ul li {
+  padding-bottom: 40px;
+  padding-left: 60px;
+  position: relative;
+  margin-right: 60px;
+}
+
+.EagleEyeItems ul li:before {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 0;
+  left: 0;
+  background-image: url("https://www.growyouragency.com/wp-content/themes/GrowYourAgency/dist/check_icon.8bb9d12c.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+}
+
+@media (max-width:990px){
+  .EagleEyeWraper{
+    display: grid;
+  }
+  .EagleEyeImg{
+    position: relative;
+  }
+  .EagleEyeItems{
+    width: 100%;
+  }
+  .EagleEyeItems ul li{
+    margin-right: 0;
+  }
+}

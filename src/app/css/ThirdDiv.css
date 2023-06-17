@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
+
+.ThridDivContent {
+  text-align: center;
+}
+
+.OurMissionDiv {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 300px;
+  margin-bottom: 200px;
+}
+
+.ContentWrapper {
+  width: 70%;
+  display: inline-block;
+  margin: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.ContentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+
+.ThridDivImg {
+  position: absolute;
+  width: 1300px;
+
+  left: -80px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.ThridDivTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 58px;
+  line-height: 0.9;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #272a31;
+  padding-bottom: 30px;
+  letter-spacing: -0.1px;
+  padding-bottom: 50px;
+}
+
+.ThridDivP {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+  font-weight: 300;
+  padding-bottom: 40px;
+  max-width: 650px;
+  width: 100%;
+}
+
+.ThirdDivSubTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+}
+
+@media (max-width:990px){
+  .OurMissionDiv{
+    left: -8px;
+    padding-bottom: 0;
+  margin-bottom: 5rem;
+  }
+  .ContentWrapper{
+    display: grid;
+    position: relative;
+    gap: 3rem;
+    
+  }
+  .ThridDivImg{
+    width: 100%;
+    position: relative;
+    left: -80px;
+    top: 0;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    z-index: -1;
+  }
+  .ContentWrapper{
+    width: 100%;
+  }
+  .TextWraper{
+    width: 100%;
+  
+  }
+  .ThridDivTitle{
+    text-align: center;
+  }
+}

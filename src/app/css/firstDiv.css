@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
+@media all {
+  .__className_0ec1f4 {
+    margin: auto;
+  }
+
+  .gy-header-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.gy-header-wrap {
+  max-width: none !important;
+  -webkit-box-pack: space-around !important;
+  -ms-flex-pack: space-around !important;
+  justify-content: space-around !important;
+}
+
+.gy-header-wrap {
+  max-width: 1050px;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+}
+
+.LinkNoDecoration:hover,
+.LinkNoDecoration:active,
+.LinkNoDecoration:link {
+  text-decoration: none;
+}
+
+.headerLogo {
+  display: inline-block;
+  margin-right: 40px;
+  z-index: 21;
+}
+
+.gy-header-trigger {
+  width: 30px;
+  height: 30px;
+  display: none;
+  position: relative;
+  z-index: 21;
+}
+
+.NavImg {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+  max-width: 100%;
+  height: auto;
+}
+
+.headerLogo img {
+  max-width: 246px;
+  width: 100%;
+}
+
+.FirstDivUl {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+  list-style: none;
+}
+
+.gy-header-trigger i {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  top: 50%;
+  margin-top: -2px;
+  left: 0;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.gy-header-trigger i:first-child {
+  top: 4px;
+}
+
+.gy-header-trigger i:last-child {
+  top: auto;
+  bottom: 4px;
+}
+
+.menu-item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+  font-weight: 400;
+}
+
+.gy-header-menu li {
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.gy-header-menu li a {
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 700;
+  position: relative;
+  color: white;
+}
+
+.gy-header-menu li a:after {
+  position: absolute;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -18px;
+  left: 0;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  content: "";
+}
+
+.gy-header-menu li a:hover:after,
+.gy-header-menu li a:active:after,
+a:focus:after {
+  width: 25px;
+}
+
+/* These were inline style tags. Uses id+class to override almost everything */
+
+.HamburgerMenu {
+  display: none;
+}
+
+.LOGO{
+  font-size: 40px;
+  color: white;
+  font-weight: 400;
+  position: relative;
+    top: 1.3rem
+}
+
+@media (max-width: 1600px) {
+  .gy-header-menu li {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 1100px) {
+  .FirstDivUl {
+    display: none;
+  }
+  .HamburgerMenu {
+    display: inherit;
+  }
+}

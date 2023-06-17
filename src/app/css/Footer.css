@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap'); 
+
+ 
+  .Footer { 
+    text-align: center;
+    background-color: #10182a;
+  } 
+
+  .FooterWraper { 
+    max-width: 1540px; 
+    width: 100%; 
+    display: inline-block; 
+    margin: auto; 
+    box-sizing: border-box; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+    text-align: left;
+  } 
+
+  .gy-footer-main { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-pack: space-between; 
+    -ms-flex-pack: space-between; 
+    justify-content: space-between; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center; 
+    padding-top: 100px; 
+    padding-bottom: 45px;
+  } 
+
+  .gy-footer-bar { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-pack: space-between; 
+    -ms-flex-pack: space-between; 
+    justify-content: space-between; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center; 
+    padding-top: 50px; 
+    padding-bottom: 70px; 
+    border-top: 2px solid #374052;
+  } 
+
+  .gy-footer-main-col { 
+    width: 50%;
+  } 
+
+  .gy-footer-main-col:last-child { 
+    text-align: right;
+  } 
+
+  .FooterWraper p { 
+    font-family:    "Montserrat", sans-serif; 
+    font-size:  18px; 
+    line-height:  1.8; 
+    margin:    0; 
+    padding:    0; 
+    border:    0; 
+    color:   #000309;
+    font-weight:  300; 
+    padding-bottom: 40px;
+  } 
+
+  .gy-footer-bar p  { 
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: white; 
+    padding-bottom: 0 !important; 
+    font-weight: 300; 
+    width: 33.3%; 
+    position: relative; 
+    top: 2px;
+  } 
+
+  .gy-footer-bar-menu { 
+    width: 33.3%; 
+    text-align: center;
+  } 
+
+  .gy-footer-bar-cards { 
+    width: 33.3%; 
+    text-align: right;
+  } 
+
+  .gy-footer-bar-cards:after { 
+    display: block; 
+    content: ""; 
+    visibility: hidden; 
+    clear: both;
+  } 
+
+  .FooterWraper img { 
+    display: block;
+    font-family:   "Montserrat", sans-serif; 
+    font-size:   18px; 
+    line-height:   1.8; 
+    margin:   0; 
+    padding:   0; 
+    border:   0; 
+    color:   #000309;
+    max-width:  100%; 
+    height:  auto;
+  } 
+
+  .gy-footer-main-col:first-child img  { 
+    max-width: 250px; 
+    margin-bottom: 60px;
+  } 
+
+  .FooterWraper ul { 
+    box-sizing:   border-box;
+    font-family:  "Montserrat", sans-serif; 
+    font-size:  18px; 
+    line-height:  1.8; 
+    margin:  0; 
+    padding:  0; 
+    border:  0; 
+    color:  #000309;
+    list-style: none;
+  } 
+
+  .gy-footer-bar-menu ul  { 
+    display: inline-block; 
+    margin: auto;
+  } 
+
+  .gy-footer-bar-cards img  { 
+    float: right;
+  } 
+
+  .FooterWraper li { 
+    font-family:   "Montserrat", sans-serif; 
+    font-size:  18px; 
+    line-height:  1.8; 
+    margin:   0; 
+    padding:   0; 
+    border:   0; 
+    color:  #000309;
+    font-weight:  400;
+  } 
+
+  .gy-footer-bar-menu li  { 
+    line-height: 1; 
+    display: inline-block; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    border-left: 2px solid #24344d;
+  } 
+
+  .gy-footer-bar-menu li:first-child  { 
+    border-left-width: 0;
+  } 
+
+  .gy-footer-main-col:first-child .gy-footer-main-menu li  { 
+    display: inline-block; 
+    padding-left: 20px; 
+    padding-right: 20px;
+  } 
+
+  .gy-footer-main-col:first-child .gy-footer-main-menu li:first-child  { 
+    padding-left: 0;
+  } 
+
+  .FooterWraper a { 
+    font-family:  "Montserrat", sans-serif; 
+    font-size:  18px; 
+    line-height:  1.8; 
+    margin:  0; 
+    padding:  0; 
+    border:  0; 
+    color:  #000309;
+  } 
+
+  .FooterWraper a:link { 
+    text-decoration: none;
+  } 
+
+  .gy-footer-bar-menu li a  { 
+    font-size: 16px; 
+    line-height: 1; 
+    font-weight: 700; 
+    color: white; 
+    transition: all 0.3s ease;
+  } 
+
+  .FooterWraper a:hover,a:active,a:link { 
+    text-decoration: none;
+  } 
+
+  .gy-footer-bar-menu li a:hover ,.gy-footer-bar-menu li a:active  { 
+    color: #00eaff;
+  } 
+
+  .gy-footer-main-col:first-child .gy-footer-main-menu li a  { 
+    font-size: 16px; 
+    line-height: 1.5; 
+    font-weight: 700; 
+    color: white; 
+    transition: all 0.3s ease;
+  } 
+
+  .FooterWraper a:hover,a:active { 
+    text-decoration: none;
+  } 
+
+  .gy-footer-main-col:first-child .gy-footer-main-menu li a:hover  { 
+    color: #05bbf7; 
+    text-decoration: underline;
+  } 
+    
+
+

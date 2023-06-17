@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap'); 
+@media all{ 
+  div { 
+    font-family: "Montserrat", sans-serif; 
+    font-size: 18px; 
+    line-height: 1.8; 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    color: #000309;
+  } 
+
+  .gy-content { 
+    text-align: center;
+  } 
+
+
+ 
+
+  .gy-secondDiv-row { 
+    
+    width: 100%; 
+    display: inline-block; 
+    margin: auto; 
+    box-sizing: border-box;
+    padding-right: 20px; 
+    text-align: left;
+  } 
+
+  .gy-home-tests-slider { 
+    position: relative; 
+   width: 100vw;
+   
+  } 
+
+  .slick-slider { 
+    position: relative; 
+    display: block; 
+    box-sizing: border-box; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    -webkit-touch-callout: none; 
+    -khtml-user-select: none; 
+    -ms-touch-action: pan-y; 
+    touch-action: pan-y; 
+    -webkit-tap-highlight-color: transparent;
+  } 
+
+  button { 
+    -webkit-appearance: none;
+  } 
+
+  .gy-home-tests-slider .slick-arrow  { 
+    position: absolute; 
+    border-width: 0; 
+    background-color: transparent; 
+    padding: 0; 
+    cursor: pointer; 
+    z-index: 10; 
+    outline: none; 
+    overflow: visible; 
+    transition: all 0.3s ease; 
+    padding-top: 0;
+  } 
+
+  .gy-home-tests-slider .slick-prev  { 
+    top: 20px; 
+    left: -80px;
+  } 
+
+
+
+  .gy-home-tests-slider .slick-arrow:hover  { 
+    padding-top: 5px;
+  } 
+
+  .slick-list { 
+    position: relative; 
+    display: block; 
+    overflow: hidden; 
+    margin: 0; 
+    padding: 0;
+  } 
+
+  .gy-home-tests-slider .slick-list  { 
+    padding-bottom: 7rem; 
+    padding-top: 7rem; 
+    
+  
+  } 
+
+  .slick-slider .slick-list  { 
+    -webkit-transform: translate3d(0, 0, 0); 
+    -moz-transform: translate3d(0, 0, 0); 
+    -ms-transform: translate3d(0, 0, 0); 
+    -o-transform: translate3d(0, 0, 0); 
+    transform: translate3d(0, 0, 0);
+  } 
+
+  
+
+  
+
+  img { 
+    display: block;
+    font-family:   "Montserrat", sans-serif; 
+    font-size:   18px; 
+    line-height:   1.8; 
+    margin:   0; 
+    padding:   0; 
+    border:   0; 
+    color:   #000309;
+    max-width:  100%; 
+    height:  auto;
+  } 
+
+  .slick-track { 
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+  } 
+
+  .slick-slider .slick-track  { 
+    -webkit-transform: translate3d(0, 0, 0); 
+    -moz-transform: translate3d(0, 0, 0); 
+    -ms-transform: translate3d(0, 0, 0); 
+    -o-transform: translate3d(0, 0, 0); 
+    transform: translate3d(0, 0, 0);
+  } 
+
+  .slick-track:before,.slick-track:after { 
+    display: table; 
+    content: '';
+  } 
+
+  .slick-track:after { 
+    clear: both;
+  } 
+
+  .gy-home-tests-slide { 
+    outline: none; 
+    padding-left: 40px; 
+    padding-right: 40px; 
+    min-width: 380px; 
+    box-sizing: border-box; 
+    opacity: 0.6; 
+    transition: all 0.3s ease;
+  } 
+
+  .slick-slide { 
+    display: none; 
+    float: left; 
+    height: 100%; 
+    min-height: 1px;
+    padding-bottom: 5rem;
+  } 
+
+  .slick-initialized .slick-slide  { 
+    display: block;
+  } 
+
+  .gy-home-tests-slide.slick-current { 
+    opacity: 1;
+  } 
+
+  .gy-home-tests-slide-user { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-pack: flex-start; 
+    -ms-flex-pack: flex-start; 
+    justify-content: flex-start; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center; 
+    padding-bottom: 35px;
+  } 
+
+  .gy-home-tests-slide-feedback { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-pack: space-between; 
+    -ms-flex-pack: space-between; 
+    justify-content: space-between; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    align-items: center; 
+    background-color: white; 
+    border-radius: 15px; 
+    min-height: 370px; 
+    padding-left: 70px; 
+    padding-right: 70px; 
+    position: relative; 
+    -webkit-box-shadow: 0px 0px 163px -44px rgba(0, 0, 0, 0.75); 
+    -moz-box-shadow: 0px 0px 163px -44px rgba(0, 0, 0, 0.75); 
+    box-shadow: 0px 0px 100px -44px rgba(0, 0, 0, 0.75);
+  } 
+
+  .gy-home-tests-slide-feedback.gy-Fish:after,.gy-home-tests-slide-feedback.gy-Whale:after,.gy-home-tests-slide-feedback.gy-Shark:after { 
+    position: absolute; 
+    width: 60px; 
+    height: 25px; 
+    bottom: 30px; 
+    right: 50px; 
+    background-image: url("https://www.growyouragency.com/wp-content/themes/GrowYourAgency/dist/shark_icon.a44dd4eb.png"); 
+    background-position: center; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    content: ""; 
+    background-repeat-x: no-repeat; 
+    background-repeat-y: no-repeat;
+  } 
+
+  .gy-home-tests-slide-feedback.gy-Whale:after { 
+    width: 85px; 
+    height: 33px; 
+    background-image: url("https://www.growyouragency.com/wp-content/themes/GrowYourAgency/dist/whale_icon.1b340c4a.png");
+  } 
+
+  .gy-home-tests-slide-feedback.gy-Fish:after { 
+    width: 40px; 
+    height: 22px; 
+    background-image: url("https://www.growyouragency.com/wp-content/themes/GrowYourAgency/dist/fish_icon.e88f1100.png");
+  } 
+
+  .gy-home-tests-slide.slide-prev .gy-home-tests-slide-feedback  { 
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none; 
+    box-shadow: none;
+  } 
+
+  .gy-home-tests-slide-user img  { 
+    width: 70px; 
+    height: 70px; 
+    border-radius: 100%;
+    
+  } 
+
+  .slick-slide img  { 
+    display: block;
+  } 
+
+  .gy-home-tests-slide-user-info { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-pack: space-between; 
+    -ms-flex-pack: space-between; 
+    justify-content: space-between; 
+    -webkit-box-align: flex-start; 
+    -ms-flex-align: flex-start; 
+    align-items: flex-start; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column; 
+    text-align: left; 
+    padding-left: 30px;
+  } 
+
+  p { 
+    font-family:    "Montserrat", sans-serif; 
+    font-size:  18px; 
+    line-height:  1.8; 
+    margin:    0; 
+    padding:    0; 
+    border:    0; 
+    color:   #000309;
+    font-weight:  300; 
+    padding-bottom: 40px;
+  } 
+
+  .gy-home-tests-slide-feedback p  { 
+    font-size: 18px; 
+    line-height: 1.5; 
+    font-weight: 500; 
+    padding-bottom: 0;
+  } 
+
+  span { 
+    font-family: "Montserrat", sans-serif; 
+    font-size: 18px; 
+    line-height: 1.8; 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    color: #000309;
+  } 
+
+  .gy-home-tests-slide-user-info .gy-name  { 
+    font-size: 16px; 
+    line-height: 1.5; 
+    letter-spacing: -0.1px; 
+    color: white; 
+    font-weight: 600;
+  } 
+}     
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+.style-UKaIs {  
+   display: block;  
+}  
+.style-ftT9V {  
+    opacity: 1;  
+    
+    transform: translate3d(-2500px, 0px, 0px); 
+    transition: all;
+    transition-duration: 300ms;
+    
+}  
+
+.style-bDXxk {  
+   width: 487px;  
+}  
+
+#style-Igz72.style-Igz72 {  
+   display: block;  
+} 
+@media (max-width:1270px){
+  .gy-home-tests-slider{
+    left: 300px;
+  }
+}
+@media (max-width:990px){
+  
+  .gy-home-tests-slider{
+    left: 0;
+  }
+  .style-bDXxk {  
+    width: 90vw;  
+ } 
+ .slick-list{
+  margin: auto;
+  width: 100%;
+ }
+ .gy-home-tests { 
+  position: relative; 
+  top: -50px; 
+
+  background-size: 150%;
+} 
+.gy-home-tests-slide { 
+  outline: none; 
+  
+  padding-right: 0; 
+  min-width: 100vw; 
+  box-sizing: border-box; 
+  opacity: 0.6; 
+  transition: all 0.3s ease;
+} 
+.gy-home-tests-slider .slick-list  { 
+  padding-bottom: 75px; 
+  padding-left: 0;
+} 
+.gy-home-tests-slide-feedback { 
+  padding-left: 40px; 
+  padding-right: 40px; 
+}
+.gy-home-tests-slide { 
+  padding-left: 18px; 
+  padding-right: 20px; 
+
+}
+.gy-secondDiv-row { 
+  max-width: 1540px; 
+  width: 100%; 
+  display: inline-block; 
+  margin: auto; 
+  box-sizing: border-box; 
+  padding-left: 0; 
+  padding-right: 0; 
+  text-align: left;
+}
+}

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
+
+.gy-content {
+  text-align: center;
+}
+
+.AgencyLifeDiv {
+  position: relative;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 200px;
+}
+
+.AgencyLifeDiv img {
+  left: auto;
+  right: -80px;
+}
+
+.AgencyLifeWrapper {
+  max-width: 1540px;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.AgencyLifeWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.AgencyLifeWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.AgencyLifeImg {
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  left: -80px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.AgencyLifeH2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 58px;
+  line-height: 0.9;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #272a31;
+  padding-bottom: 50px;
+  letter-spacing: -0.1px;
+}
+
+.AgencyLifeP {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000309;
+  font-weight: 300;
+  padding-bottom: 40px;
+  max-width: 650px;
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+  .AgencyLifeDiv {
+    
+    padding-bottom: 0;
+    margin-bottom:7rem;
+  }
+  .AgencyLifeWrapper {
+    display: grid;
+  }
+  .AgencyLifeImg {
+    position: relative;
+    width: 1000px;
+ 
+    
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    z-index: -1;
+   
+    
+  }
+  .FourthDivImgWraper{
+    position: relative;
+    right: 5rem;
+  }
+  .AgencyLifeDivText{
+    width: 100%;
+  }
+  .AgencyLifeP{
+    max-width:100%;
+  }
+  .AgencyLifeH2{
+    text-align: center;
+  }
+}

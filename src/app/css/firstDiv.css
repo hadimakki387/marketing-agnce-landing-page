@@ -169,7 +169,9 @@ a:focus:after {
   color: white;
   font-weight: 400;
   position: relative;
-    top: 1.3rem
+    top: 1.3rem;
+    text-align: center;
+    
 }
 .Wave{
   background: rgba(0, 67, 139, 0.85);
@@ -189,5 +191,21 @@ a:focus:after {
   }
   .HamburgerMenu {
     display: inherit;
+    
   }
+  
+}
+@media (max-width: 1600px) {
+  .gy-header-menu li {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .gy-header-wrap{
+    justify-content: space-between !important;
+
+    margin: auto;
+  }
+  
 }

@@ -30,8 +30,8 @@ function FirstDiv() {
   return (
     <>
       <div
-        className="hero-section pt-50 background-img snipcss0-0-0-1 snipcss-FKFJG style-UoMqf"
-        id="style-UoMqf"
+        className=" pt-50 Header"
+        
       >
         <div className={!sideBar ? "SideBar" : "slideIn"}>
           <div className={sideBar ? "content contentIn" : "content"}>

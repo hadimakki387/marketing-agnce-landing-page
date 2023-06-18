@@ -67,7 +67,14 @@ function SixthDiv() {
           </div>
           
         </div>
-        <div className="Form">
+        <Reveal
+                keyframes={customAnimation}
+                duration={1500}
+                delay={1000}
+                triggerOnce
+                className="Form"
+              >
+                <div className="Form TextInput">
         
           <input
             type="text"
@@ -92,6 +99,8 @@ function SixthDiv() {
           <button className="SubmitButton" onClick={handleSend}>Send</button>
           
         </div>
+              </Reveal>
+        
         
       </div>
       

@@ -15,27 +15,27 @@ import LazyLoad from "react-lazy-load";
 export default function Index() {
   return (
     <div className="main">
-      <LazyLoad>
+      <LazyLoad offset={1000}>
         <FirstDiv />
       </LazyLoad>
-      <LazyLoad>
+      <LazyLoad offset={1000}>
         <SecondDiv />
       </LazyLoad>
-      <LazyLoad>
+      <LazyLoad offset={1000}>
         <ThirdDiv />
       </LazyLoad>
-      <LazyLoad>
+      <LazyLoad offset={1000}>
         <FourthDiv />
       </LazyLoad>
-      <LazyLoad>
+      <LazyLoad offset={1000}>
         <FifthDiv />
       </LazyLoad>
-      <LazyLoad>
+      <LazyLoad offset={1000}>
         <SixthDiv />
       </LazyLoad>
       
       
-      <LazyLoad>
+      <LazyLoad offset={1000}>
         <Footer />
       </LazyLoad>
     </div>

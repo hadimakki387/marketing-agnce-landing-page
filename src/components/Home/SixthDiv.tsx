@@ -18,36 +18,21 @@ function SixthDiv() {
               <span className="">+</span>
             </div>
             <p className="">Active Students</p>
-            <img
-              decoding="async"
-              src="https://www.growyouragency.com/wp-content/themes/GrowYourAgency/assets/img/graps_icon.png"
-              alt="Chart Icon"
-              className=""
-            />
+           
           </div>
           <div className="stats-col ">
             <span id="gy_num_2" className="">
               <CountUp end={43} duration={5} />
             </span>
             <p className="">6-7 Figure Students</p>
-            <img
-              decoding="async"
-              src="https://www.growyouragency.com/wp-content/themes/GrowYourAgency/assets/img/money_icon.png"
-              alt="Chart Icon"
-              className=""
-            />
+            
           </div>
           <div className="stats-col ">
             <span id="gy_num_3" className="">
               <CountUp end={298} duration={5} />
             </span>
             <p className="">Jobs Quit</p>
-            <img
-              decoding="async"
-              src="https://www.growyouragency.com/wp-content/themes/GrowYourAgency/assets/img/chart_icon.png"
-              alt="Chart Icon"
-              className=""
-            />
+            
           </div>
         </div>
       </div>

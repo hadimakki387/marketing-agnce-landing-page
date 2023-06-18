@@ -5,6 +5,7 @@ import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import CountUp from "react-countup";
 import LazyLoad from "react-lazy-load";
+import Image from "next/image";
 
 function ThirdDiv() {
   const customAnimation = keyframes`
@@ -39,7 +40,7 @@ function ThirdDiv() {
                 <p>
                   Unlock your TikTok potential with our expert agency services.
                   We craft viral content strategies, boost followers, and
-                  enhance engagement. Elevate your brand's visibility on TikTok.
+                  enhance engagement. Elevate your brand&apos;s visibility on TikTok.
                 </p>
               </section>
               <section>
@@ -55,28 +56,28 @@ function ThirdDiv() {
           <div className="GridSystem">
             <Reveal keyframes={customAnimation} delay={500} triggerOnce>
               <div className="Card firstCard">
-                <img src="bonus.png" alt="bonus" />
+                <Image width={1000} height={1000} src="/bonus.png" alt="bonus" />
                 <LazyLoad>
                   <CountUp end={1600} duration={3} className="text-white" />
                 </LazyLoad>
                 <p className="text-white">Active Users</p>
               </div>
               <div className="Card moveDownCard secondCard">
-                <img src="headphone.png" alt="bonus" />
+                <Image width={1000} height={1000} src="/headphone.png" alt="bonus" />
                 <LazyLoad>
                   <CountUp end={2500} duration={3} className="text-purple" />
                 </LazyLoad>
                 <p className="text-purple">Global client</p>
               </div>
               <div className="Card thirdCard">
-                <img src="cup.png" alt="bonus" />
+                <Image width={1000} height={1000} src="/cup.png" alt="bonus" />
                 <LazyLoad>
                   <CountUp end={2150} duration={3} className="text-blue" />
                 </LazyLoad>
                 <p className="text-blue">Win award</p>
               </div>
               <div className="Card  moveDownCard fourthCard">
-                <img src="client.png" alt="bonus" />
+                <Image width={1000} height={1000} src="/client.png" alt="bonus" />
                 <LazyLoad>
                   <CountUp end={2150} duration={3} className="text-white" />
                 </LazyLoad>

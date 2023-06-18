@@ -1,5 +1,6 @@
 import React from "react";
 import "@/app/css/SeventhDiv.css";
+import Image from "next/image";
 
 function SeventhDiv() {
   return (
@@ -16,12 +17,7 @@ function SeventhDiv() {
         <div className="gy-home-sys-levels gy-home-sys-levels-fish">
           <div className="gy-home-sys-levels-col">
             <div className="gy-home-sys-levels-image">
-              <img
-                decoding="async"
-                src="https://www.growyouragency.com/wp-content/uploads/2019/03/fish.png"
-                className="Img"
-                id="FishImg1"
-              />
+             
               <span>$1-3K/mo</span>
             </div>
           </div>
@@ -41,12 +37,7 @@ function SeventhDiv() {
         <div className="gy-home-sys-levels gy-home-sys-levels-shark">
           <div className="gy-home-sys-levels-col">
             <div className="gy-home-sys-levels-image">
-              <img
-                decoding="async"
-                src="https://www.growyouragency.com/wp-content/uploads/2019/03/shark.png"
-                className="Imgs"
-                id="FishImg2"
-              />
+              
               <span>$3-8K/mo</span>
             </div>
           </div>
@@ -67,12 +58,7 @@ function SeventhDiv() {
         <div className="gy-home-sys-levels gy-home-sys-levels-whale">
           <div className="gy-home-sys-levels-col">
             <div className="gy-home-sys-levels-image">
-              <img
-                decoding="async"
-                src="https://www.growyouragency.com/wp-content/uploads/2019/03/whale.png"
-                className="Imgs"
-                id="FishImg3"
-              />
+              
               <span>$8K+/mo</span>
             </div>
           </div>

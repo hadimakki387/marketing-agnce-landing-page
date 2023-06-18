@@ -5,7 +5,7 @@ import HamburgerMenu from "./Home/HamburgerMenu";
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
 
-function NavBar(props) {
+function NavBar({clicked,onClick}:{clicked:Boolean,onClick:Function}) {
   const customAnimation = keyframes`
   from {
     opacity: 0;
@@ -57,7 +57,7 @@ function NavBar(props) {
           
         </ul>
         
-        <HamburgerMenu FF={props.onClick} clicked={props.clicked}/>
+        <HamburgerMenu FF={onClick} clicked={clicked} onClick={()=>{}}/>
       </div>
       
       </Reveal>

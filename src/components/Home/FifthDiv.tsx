@@ -1,15 +1,18 @@
 import React from "react";
 import "@/app/css/FifthDiv.css";
+import Image from "next/image";
 
 function FifthDiv() {
   return (
     <div className="EagleEye">
       <div className="EagleEyeWraper">
         <div className="EagleEyeItems">
-          <img
-            decoding="async"
-            src="https://www.growyouragency.com/wp-content/uploads/2019/02/Falcon.jpg"
+          <Image
+            src="/Falcon.jpg"
             className="EagleEyeImg"
+            width={1000}
+            height={1000}
+            alt=""
           />
         </div>
         <div className="EagleEyeItems">

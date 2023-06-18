@@ -1,6 +1,7 @@
 import React from "react";
 import "@/app/css/Footer.css";
 import Link from "next/link";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -8,14 +9,22 @@ function Footer() {
       <div className="FooterWraper">
         <div className="gy-footer-main">
           <div className="gy-footer-main-col">
-            <img src="https://www.growyouragency.com/wp-content/themes/GrowYourAgency/assets/img/Logo_name_footer.png" />
+            <Image
+              alt=""
+              width={1000}
+              height={1000}
+              src="/Logo_name_footer.png"
+            />
             <div className="gy-footer-main-menu">
               <ul>
                 <li
                   id="menu-item-188"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-188"
                 >
-                  <Link href="https://www.growyouragency.com/" aria-current="page">
+                  <Link
+                    href="https://www.growyouragency.com/"
+                    aria-current="page"
+                  >
                     Home
                   </Link>
                 </li>
@@ -39,7 +48,9 @@ function Footer() {
                   id="menu-item-189"
                   className="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"
                 >
-                  <Link href="https://growyouragency.com/resources/">Resources</Link>
+                  <Link href="https://growyouragency.com/resources/">
+                    Resources
+                  </Link>
                 </li>
                 <li
                   id="menu-item-190"
@@ -85,7 +96,12 @@ function Footer() {
             </ul>
           </div>
           <div className="gy-footer-bar-cards">
-            <img src="https://www.growyouragency.com/wp-content/themes/GrowYourAgency/assets/img/cards.png" />
+            <Image
+              width={200}
+              height={200}
+              alt=""
+              src="/cards.png"
+            />
           </div>
         </div>
       </div>

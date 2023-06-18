@@ -80,6 +80,11 @@
   font-weight: bold;
  
 }
+.Card img{
+
+  width: 6rem;
+ 
+}
 .moveDownCard{
   transform: translate3d(0,3rem,0);
 }

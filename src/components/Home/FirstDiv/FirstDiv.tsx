@@ -98,28 +98,28 @@ function FirstDiv() {
               >
                 <Image
                   className="img-fluid d-block animation-one snipcss0-5-21-22"
-                  src="http://agencyco.themetags.com/img/hero-animation-04.svg"
+                  src="/hero-animation-04.svg"
                   alt="animation image"
                   width={500}
                   height={500}
                 />
                 <Image
                   className="img-fluid d-none d-lg-block animation-two snipcss0-5-21-23"
-                  src="http://agencyco.themetags.com/img/hero-animation-01.svg"
+                  src="/hero-animation-01.svg"
                   alt="animation image"
                   width={120}
                   height={120}
                 />
                 <Image
                   className="img-fluid d-none d-lg-block animation-three snipcss0-5-21-24"
-                  src="http://agencyco.themetags.com/img/hero-animation-02.svg"
+                  src="/hero-animation-02.svg"
                   alt="animation image"
                   width={120}
                   height={120}
                 />
                 <Image
                   className="img-fluid d-none d-lg-block animation-four snipcss0-5-21-25"
-                  src="http://agencyco.themetags.com/img/hero-animation-03.svg"
+                  src="/hero-animation-03.svg"
                   alt="animation image"
                   width={230}
                   height={230}

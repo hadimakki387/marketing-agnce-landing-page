@@ -18,9 +18,9 @@ function CarouselItem() {
       </div>
       <div className="gy-home-tests-slide-feedback gy-Shark">
         <p>
-          “Within 2 months of starting my SMMA, I built a six-figure (yearly)
-          agency. And within 4 months, I was making well over $20k per month
-          from my agency alone. “
+          “Lorem ipsum dolor sit amet consectetur adipiscing elit, faucibus sed
+          natoque odio nostra venenatis habitant, phasellus laoreet interdum hac
+          consequat condimentum.“
         </p>
       </div>
     </>

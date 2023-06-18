@@ -41,14 +41,14 @@
 
 .content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     height: 100%;
     gap: 2rem;
     transition: all 1000ms ease-in-out; /* Add transition property and duration */
     transform: translateX(10%);
     opacity: 0;
+    margin-top: 2rem;
   }
   
   .contentIn {
@@ -60,5 +60,11 @@
   }
   
   
-  
+  .LinksInSideBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
   

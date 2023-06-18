@@ -171,6 +171,10 @@ a:focus:after {
   position: relative;
     top: 1.3rem
 }
+.Wave{
+  background-color: #265f9c;
+  width: 100%;
+}
 
 @media (max-width: 1600px) {
   .gy-header-menu li {

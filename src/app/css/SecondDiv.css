@@ -82,6 +82,8 @@
     overflow: hidden; 
     margin: 0; 
     padding: 0;
+    
+
   } 
 
   .gy-home-tests-slider .slick-list  {
@@ -125,6 +127,8 @@
     display: block; 
     margin-left: auto; 
     margin-right: auto;
+    z-index: 100;
+    background-color: white;
   } 
 
   .slick-slider .slick-track  { 

@@ -28,7 +28,7 @@ function Footer() {
               delay={1000}
               triggerOnce
             >
-              <span className="FooterLOGO">LOGO</span>
+              <span className="FooterLOGO dark">LOGO</span>
             </Reveal>
             <div className="gy-footer-main-menu">
               <ul>
@@ -40,11 +40,12 @@ function Footer() {
                 >
                   <li
                     id="menu-item-188"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-188"
+                    className=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-188"
                   >
                     <Link
                       href="https://www.growyouragency.com/"
                       aria-current="page"
+                      className="dark"
                     >
                       Home
                     </Link>
@@ -53,7 +54,10 @@ function Footer() {
                     id="menu-item-204"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-204"
                   >
-                    <Link href="https://www.growyouragency.com/iman-gadzhi/">
+                    <Link
+                      href="https://www.growyouragency.com/iman-gadzhi/"
+                      className="dark"
+                    >
                       Our Story
                     </Link>
                   </li>
@@ -61,7 +65,10 @@ function Footer() {
                     id="menu-item-205"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-205"
                   >
-                    <Link href="https://www.growyouragency.com/philosophy/">
+                    <Link
+                      href="https://www.growyouragency.com/philosophy/"
+                      className="dark"
+                    >
                       Philosophy
                     </Link>
                   </li>
@@ -69,7 +76,10 @@ function Footer() {
                     id="menu-item-189"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"
                   >
-                    <Link href="https://growyouragency.com/resources/">
+                    <Link
+                      href="https://growyouragency.com/resources/"
+                      className="dark"
+                    >
                       Resources
                     </Link>
                   </li>
@@ -77,7 +87,10 @@ function Footer() {
                     id="menu-item-190"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"
                   >
-                    <Link href="https://lp.growyouragency.com/beginner-business">
+                    <Link
+                      href="https://lp.growyouragency.com/beginner-business"
+                      className="dark"
+                    >
                       Free Case Study
                     </Link>
                   </li>
@@ -94,14 +107,14 @@ function Footer() {
           triggerOnce
         >
           <div className="gy-footer-bar">
-            <p>© 2019 Grow Your Agency. All rights reserved</p>
+            <p className="dark">© 2019 Grow Your Agency. All rights reserved</p>
             <div className="gy-footer-bar-menu">
               <ul>
                 <li
                   id="menu-item-1422"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1422"
                 >
-                  <Link href="https://www.growyouragency.com/contact-us/">
+                  <Link href="https://www.growyouragency.com/contact-us/" className="dark">
                     Contact us
                   </Link>
                 </li>
@@ -109,7 +122,7 @@ function Footer() {
                   id="menu-item-208"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-208"
                 >
-                  <Link href="https://www.growyouragency.com/privacy/">
+                  <Link href="https://www.growyouragency.com/privacy/" className="dark">
                     Privacy Policy
                   </Link>
                 </li>
@@ -117,7 +130,7 @@ function Footer() {
                   id="menu-item-209"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"
                 >
-                  <Link href="https://www.growyouragency.com/terms/">
+                  <Link href="https://www.growyouragency.com/terms/" className="dark">
                     Terms of Service
                   </Link>
                 </li>

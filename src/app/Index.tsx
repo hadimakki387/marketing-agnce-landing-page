@@ -1,6 +1,7 @@
 "use client"
 import "./css/SideBar.css";
 import "./css/New.css";
+import "./css/shortcuts.css"
 import FirstDiv from "@/components/Home/FirstDiv/FirstDiv";
 import SecondDiv from "@/components/Home/SecondDiv";
 import ThirdDiv from "@/components/Home/ThirdDiv";

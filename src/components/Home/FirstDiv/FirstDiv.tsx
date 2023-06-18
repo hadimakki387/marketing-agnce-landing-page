@@ -7,7 +7,6 @@ import { Reveal } from "react-awesome-reveal";
 import FloatingImg from "./FloatingImg";
 import HamburgerMenu from "../HamburgerMenu";
 import Icons from "./Icons";
-import Image from "next/image";
 
 function FirstDiv() {
   const [sideBar, setSideBar] = useState(false);
@@ -50,14 +49,14 @@ function FirstDiv() {
                 />
               </Reveal>
             </div>
-            <div className="LinksInSideBar">
+            <div className="LinksInSideBar dark">
               <Reveal
                 keyframes={customAnimation}
                 duration={300}
                 delay={800}
                 cascade
               >
-                <Link href="">Our Story</Link>
+                <Link href="" >Our Story</Link>
                 <Link href="">Philosophy</Link>
                 <Link href="">Resources</Link>
                 <Link href="">Free Case Study</Link>
@@ -69,6 +68,7 @@ function FirstDiv() {
 
         <NavBar onClick={ToggleSideBar} clicked={sideBar} />
         <div className="container ">
+          
           <div className="row align-items-center justify-content-between pt-5 pb-5 snipcss0-2-2-3">
             <div className="col-md-12 col-lg-6 snipcss0-3-3-4">
               <div className="hero-content-left text-white snipcss0-4-4-5">
@@ -78,7 +78,7 @@ function FirstDiv() {
                   delay={500}
                   triggerOnce
                 >
-                  <h1 className="text-white snipcss0-5-5-6">
+                  <h1 className=" snipcss0-5-5-6 ">
                     We are Digital Agency &amp; Marketing
                   </h1>
                   <p className="lead snipcss0-5-5-7">
@@ -123,15 +123,7 @@ function FirstDiv() {
           </div>
         </div>
       </div>
-      <div>
-        <Image
-          src="/bg-wave.png"
-          alt=""
-          width={1000}
-          height={1000}
-          className="Wave"
-        ></Image>
-      </div>
+     
     </>
   );
 }

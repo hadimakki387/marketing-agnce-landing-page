@@ -172,9 +172,10 @@ a:focus:after {
     top: 1.3rem
 }
 .Wave{
-  background-color: #265f9c;
+  background: rgba(0, 67, 139, 0.85);
   width: 100%;
 }
+
 
 @media (max-width: 1600px) {
   .gy-header-menu li {

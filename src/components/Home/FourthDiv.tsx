@@ -22,26 +22,20 @@ function FourthDiv() {
       <div className="gy-content">
         <div className="AgencyLifeWrapper">
           <div className="AgencyLifeDivText">
-            <Image
-              height={2000}
-              width={2000}
-              src="/BG.jpg"
-              alt=""
-              className="BgImg"
-            />
+            
             <Reveal
               keyframes={customAnimation}
               duration={1500}
               delay={500}
               triggerOnce
             >
-              <h2 className="AgencyLifeH2">Agency life.</h2>
-              <p className="AgencyLifeP">
+              <h2 className="AgencyLifeH2 dark">Agency life.</h2>
+              <p className="AgencyLifeP dark">
                 We help total beginners with zero Social media experience &amp;
                 Increase there ingagement and protecting there accounts from
                 being baned
               </p>
-              <p className="AgencyLifeP">
+              <p className="AgencyLifeP dark">
                 Very few people understand how to setup their accounts right. We
                 place an emphasis on working ‘on’ the business and not ‘in’ it.
               </p>

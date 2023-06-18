@@ -33,7 +33,7 @@ function NavBar({ clicked, onClick }: { clicked: Boolean; onClick: Function }) {
     <div className="gy-header-wrap ">
       <Reveal duration={500} keyframes={customAnimation2} triggerOnce >
         <Link className="headerLogo " href="">
-          <p className="LOGO">LOGO</p>
+          <p className="LOGO dark">LOGO</p>
         </Link>
       </Reveal>
 
@@ -46,27 +46,27 @@ function NavBar({ clicked, onClick }: { clicked: Boolean; onClick: Function }) {
             cascade
           >
             <li className="menu-item">
-              <Link href="" className="LinkNoDecoration">
+              <Link href="" className="dark LinkNoDecoration ">
                 Our Story
               </Link>
             </li>
             <li className="menu-item">
-              <Link href="" className="LinkNoDecoration">
+              <Link href="" className="dark LinkNoDecoration">
                 Philosophy
               </Link>
             </li>
             <li className="menu-item">
-              <Link href="" className="LinkNoDecoration">
+              <Link href="" className="dark LinkNoDecoration">
                 Resources
               </Link>
             </li>
             <li className="menu-item">
-              <Link href="" className="LinkNoDecoration">
+              <Link href="" className="dark LinkNoDecoration">
                 Free Case Study
               </Link>
             </li>
             <li className="menu-item">
-              <Link href="" className="LinkNoDecoration">
+              <Link href="" className="dark LinkNoDecoration">
                 Reviews
               </Link>
             </li>

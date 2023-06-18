@@ -9,12 +9,7 @@ function Footer() {
       <div className="FooterWraper">
         <div className="gy-footer-main">
           <div className="gy-footer-main-col">
-            <Image
-              alt=""
-              width={1000}
-              height={1000}
-              src="/Logo_name_footer.png"
-            />
+          <span className="FooterLOGO">LOGO</span>
             <div className="gy-footer-main-menu">
               <ul>
                 <li

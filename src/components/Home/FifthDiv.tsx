@@ -1,14 +1,27 @@
 import React from "react";
 import "@/app/css/FifthDiv.css";
 import Image from "next/image";
+import { keyframes } from "@emotion/react";
+import { Reveal } from "react-awesome-reveal";
 
 function FifthDiv() {
+  const customAnimation = keyframes`
+    from {
+      opacity: 0;
+      transform: translate3d(0, -25%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  `;
   return (
     <div className="EagleEye">
       <div className="EagleEyeWraper">
         <div className="EagleEyeItems">
           <Image
-            src="/Falcon.jpg"
+            src="/studying.jpg"
             className="EagleEyeImg"
             width={1000}
             height={1000}
@@ -16,33 +29,41 @@ function FifthDiv() {
           />
         </div>
         <div className="EagleEyeItems">
-          <h2 className="EagleEyeTitle">Eagle-eye.</h2>
+        <Reveal
+              keyframes={customAnimation}
+              duration={1500}
+              delay={500}
+              triggerOnce
+            >
+          <h2 className="EagleEyeTitle">Lorem ipsum.</h2>
           <p>
-            <strong>We don’t believe in being a one trick pony.</strong>
+            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing.</strong>
           </p>
           <p>
-            After thousands of paid customers, we understand it’s just as much
-            about the mental battle as it is about tactics. Our teaching is
-            designed to build real Entrepreneurs. Entrepreneurs who have an
-            ‘Eagle-Eye’.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit hac urna
+            placerat, posuere pulvinar quis ridiculus sociosqu lacus faucibus
+            dapibus aliquam magna, curae suscipit magnis vestibulum blandit
+            phasellus per fames gravida.
           </p>
           <ul>
             <li>
-              We teach our students about not only how to sell but how to build
-              an incredible team.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
+              mauris habitant ullamcorper id felis scelerisque.
             </li>
             <li>
-              We teach our students how to manage cash-flow, how to understand
-              copywriting, paid traffic, accounting and more.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
+              mauris habitant ullamcorper id felis scelerisque.
             </li>
             <li>
-              We’re building real Entrepreneurs with real skills, not gimmicks.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
+              mauris habitant ullamcorper id felis scelerisque.
             </li>
             <li>
-              Finally – we teach our community how to manage mindset, structure
-              &amp; habits.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
+              mauris habitant ullamcorper id felis scelerisque.
             </li>
           </ul>
+          </Reveal>
         </div>
       </div>
     </div>

@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
-@media all {
+
+  body{
+    scroll-behavior: smooth;
+  }
   .__className_0ec1f4 {
     margin: auto;
   }
 
+  .main{
+    width: 100vw;
+  }
   .gy-header-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15,7 +21,7 @@
     -ms-flex-align: center;
     align-items: center;
   }
-}
+
 
 .gy-header-wrap {
   max-width: none !important;

@@ -3,44 +3,36 @@ import React from "react";
 
 function FloatingImg() {
   return (
-    <ul className="list-inline snipcss0-6-9-11">
-      <li className="list-inline-item snipcss0-7-11-12">
-        <Image
-          src="/client-1-gray.png"
-          width={85}
-          height={85}
-          alt="client"
-          className="img-fluid snipcss0-8-12-13"
-        />
-      </li>
-      <li className="list-inline-item snipcss0-7-11-14">
-        <Image
-          src="/client-2-gray.png"
-          width={85}
-          height={85}
-          alt="client"
-          className="img-fluid snipcss0-8-14-15"
-        />
-      </li>
-      <li className="list-inline-item snipcss0-7-11-16">
-        <Image
-          src="/client-3-gray.png"
-          width={85}
-          height={85}
-          alt="client"
-          className="img-fluid snipcss0-8-16-17"
-        />
-      </li>
-      <li className="list-inline-item snipcss0-7-11-18">
-        <Image
-          src="/client-4-gray.png"
-          width={85}
-          height={85}
-          alt="client"
-          className="img-fluid snipcss0-8-18-19"
-        />
-      </li>
-    </ul>
+    <>
+      <Image
+        className="img-fluid d-block animation-one snipcss0-5-21-22"
+        src="/hero-animation-04.png"
+        alt="animation image"
+        width={500}
+        height={500}
+      />
+      <Image
+        className="img-fluid d-none d-lg-block animation-two snipcss0-5-21-23"
+        src="/hero-animation-01.png"
+        alt="animation image"
+        width={120}
+        height={120}
+      />
+      <Image
+        className="img-fluid d-none d-lg-block animation-three snipcss0-5-21-24"
+        src="/hero-animation-02.png"
+        alt="animation image"
+        width={120}
+        height={120}
+      />
+      <Image
+        className="img-fluid d-none d-lg-block animation-four snipcss0-5-21-25"
+        src="/hero-animation-03.png"
+        alt="animation image"
+        width={230}
+        height={230}
+      />
+    </>
   );
 }
 

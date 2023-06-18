@@ -1,39 +1,65 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "@/app/css/SixthDiv.css";
-import CountUp from "react-countup";
 
 function SixthDiv() {
-  const [count, setCount] = useState(0);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSend = () => {
+    // Generate the email body using the gathered values
+    const emailBody = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+    // Send the user to the email client with the generated email body
+    const mailtoLink = `mailto:your-email@example.com?subject=Contact Inquiry&body=${encodeURIComponent(
+      emailBody
+    )}`;
+    window.location.href = mailtoLink;
+  };
 
   return (
-    <div className="stats ">
-      <div className="statsContent ">
-        <div className="statsItems">
-          <div className="stats-col ">
-            <div className="stats-col-percents ">
-              <span id="gy_num_1" className="">
-                <CountUp end={1100} duration={5} />
-              </span>
-              <span className="">+</span>
-            </div>
-            <p className="">Active Students</p>
-           
+    <div className="ContactUsDiv">
+      <div className="ContactUs">
+        <div className="TextForm">
+          <div>
+            <h2 className="FormH2">Looking for a excellent Tiktok Agency?</h2>
+          <p className="FormP">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ac eu mattis
+            placerat ligula et semper imperdiet, mauris sem dis erat auctor
+            inceptos ad in nisl bibendum pretium feugiat natoque consequat.
+          </p>
           </div>
-          <div className="stats-col ">
-            <span id="gy_num_2" className="">
-              <CountUp end={43} duration={5} />
-            </span>
-            <p className="">6-7 Figure Students</p>
-            
+          <div className="ContactsInfo">
+            <p className="ContactsInfoP">Phone: +1234567890123</p>
+            <p className="ContactsInfoP">
+              Email:Email: email@yourdomain.com
+            </p>
           </div>
-          <div className="stats-col ">
-            <span id="gy_num_3" className="">
-              <CountUp end={298} duration={5} />
-            </span>
-            <p className="">Jobs Quit</p>
-            
-          </div>
+          
+        </div>
+        <div className="Form">
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            className="TextInput"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            className="TextInput"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <textarea
+            className="TextArea"
+            placeholder="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+          <button className="SubmitButton" onClick={handleSend}>Send</button>
         </div>
       </div>
     </div>

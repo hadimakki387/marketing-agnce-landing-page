@@ -3,7 +3,7 @@
  
   .Footer { 
     text-align: center;
-    background-color: #10182a;
+    background-color: #265f9c ;
   } 
 
   .FooterWraper { 
@@ -215,3 +215,9 @@
     
 
 
+.FooterLOGO{
+  color: white;
+  font-size: 20px;
+ height: 4rem;
+  font-weight: 600;
+}

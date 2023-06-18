@@ -44,7 +44,6 @@
 
 .EagleEyeImg {
   display: block;
-  position: absolute;
   top: 0;
   left: 0;
   font-family: "Montserrat", sans-serif;
@@ -54,12 +53,8 @@
   padding: 0;
   border: 0;
   color: #000309;
-  width: 1000px;
-}
-
-.EagleEyeImg {
-  height: auto;
-  z-index: -1;
+  width: 700px;
+  border-radius: 100%;
 }
 
 h2 {
@@ -141,7 +136,7 @@ h2 {
   height: 36px;
   top: 0;
   left: 0;
-  background-image: url("https://www.growyouragency.com/wp-content/themes/GrowYourAgency/dist/check_icon.8bb9d12c.png");
+  background-image: url("/LI.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -150,17 +145,17 @@ h2 {
   background-repeat-y: no-repeat;
 }
 
-@media (max-width:990px){
-  .EagleEyeWraper{
+@media (max-width: 990px) {
+  .EagleEyeWraper {
     display: grid;
   }
-  .EagleEyeImg{
+  .EagleEyeImg {
     position: relative;
   }
-  .EagleEyeItems{
+  .EagleEyeItems {
     width: 100%;
   }
-  .EagleEyeItems ul li{
+  .EagleEyeItems ul li {
     margin-right: 0;
   }
 }

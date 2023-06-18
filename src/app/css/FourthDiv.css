@@ -7,9 +7,18 @@
 .AgencyLifeDiv {
   position: relative;
   overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 100px 0;
   margin-bottom: 200px;
+  background-color: #0c4c90;
+  z-index: -2;
+}
+.BgImg{
+  position: absolute;
+  top:-15rem;
+  left: 0;
+  transform: translateX(-8rem);
+  z-index: -1;
+  opacity: 0.2;
 }
 
 .AgencyLifeDiv img {
@@ -39,18 +48,8 @@
   -ms-flex-align: center;
   align-items: center;
 }
-
-.AgencyLifeWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  flex-direction: row-reverse;
+.AgencyLifeDivText{
+  width: 100%;
 }
 
 .AgencyLifeImg {
@@ -74,9 +73,10 @@
   margin: 0;
   padding: 0;
   border: 0;
-  color: #272a31;
+  color: white;
   padding-bottom: 50px;
   letter-spacing: -0.1px;
+  text-align: center;
 }
 
 .AgencyLifeP {
@@ -86,11 +86,12 @@
   margin: 0;
   padding: 0;
   border: 0;
-  color: #000309;
-  font-weight: 300;
+  color: white;
+  font-weight: 400;
   padding-bottom: 40px;
-  max-width: 650px;
-  width: 100%;
+  width: 70%;
+  margin: auto;
+  text-align: center;
 }
 
 @media (max-width: 990px) {

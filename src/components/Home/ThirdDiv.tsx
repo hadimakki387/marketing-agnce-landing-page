@@ -1,33 +1,88 @@
+"use client";
 import React from "react";
 import "@/app/css/ThirdDiv.css";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+import CountUp from "react-countup";
+import LazyLoad from "react-lazy-load";
 
 function ThirdDiv() {
+  const customAnimation = keyframes`
+    from {
+      opacity: 0;
+      transform: translate3d(0, -25%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  `;
+
   return (
     <div className="OurMissionDiv ">
       <div className="ThridDivContent">
         <div className="ContentWrapper">
-          <div className="ThirdDivImgWrapper">
-            <img
-              decoding="async"
-              src="https://www.growyouragency.com/wp-content/uploads/2019/03/University02.png"
-              className="ThridDivImg"
-            />
+          <div className="TextDivWrapper">
+            <Reveal keyframes={customAnimation} delay={500} triggerOnce>
+              <section>
+                <h2>Welcome to our TikTok Followers Agency!</h2>
+                <p>
+                  Are you a TikTok creator, influencer, or business looking to
+                  rapidly grow your follower base? Look no further! Our digital
+                  agency specializes in providing top-notch solutions to help
+                  you gain an army of engaged followers on TikTok.
+                </p>
+              </section>
+              <section>
+                <h3 className="ThirdDivH3">Maximize TikTok presence</h3>
+                <p>
+                  Unlock your TikTok potential with our expert agency services.
+                  We craft viral content strategies, boost followers, and
+                  enhance engagement. Elevate your brand's visibility on TikTok.
+                </p>
+              </section>
+              <section>
+                <h3 className="ThirdDivH3">Strategic growth for influencers</h3>
+                <p>
+                  Expand your TikTok influence and monetize your content. Our
+                  agency connects you with brands and sponsorship opportunities.
+                  Achieve sustainable success as a TikTok influencer.
+                </p>
+              </section>
+            </Reveal>
           </div>
-          <div className="TextWraper">
-            <h2 className="ThridDivTitle">Our mission.</h2>
-            <p className="ThridDivP">
-              <strong className="ThirdDivSubTitle">
-                The collapse of our education system as we know it.
-              </strong>
-            </p>
-            <p className="ThridDivP">
-              We’re on a mission to reform the education system by bringing our
-              customers the best online business programs the world has ever
-              seen. Period. We’re here to help nurture &amp; grow the next breed
-              of agencies. Traditional education is outdated, invalid &amp;
-              overpriced. Our courses aim to deliver 10x the impact on your
-              income for 1/100 of the price tag of a regular college education.
-            </p>
+          <div className="GridSystem">
+            <Reveal keyframes={customAnimation} delay={500} triggerOnce>
+              <div className="Card firstCard">
+                <img src="bonus.png" alt="bonus" />
+                <LazyLoad>
+                  <CountUp end={1600} duration={3} className="text-white" />
+                </LazyLoad>
+                <p className="text-white">Active Users</p>
+              </div>
+              <div className="Card moveDownCard secondCard">
+                <img src="headphone.png" alt="bonus" />
+                <LazyLoad>
+                  <CountUp end={2500} duration={3} className="text-purple" />
+                </LazyLoad>
+                <p className="text-purple">Global client</p>
+              </div>
+              <div className="Card thirdCard">
+                <img src="cup.png" alt="bonus" />
+                <LazyLoad>
+                  <CountUp end={2150} duration={3} className="text-blue" />
+                </LazyLoad>
+                <p className="text-blue">Win award</p>
+              </div>
+              <div className="Card  moveDownCard fourthCard">
+                <img src="client.png" alt="bonus" />
+                <LazyLoad>
+                  <CountUp end={2150} duration={3} className="text-white" />
+                </LazyLoad>
+                <p className="text-white">Clients satisfaction</p>
+              </div>
+            </Reveal>
           </div>
         </div>
       </div>

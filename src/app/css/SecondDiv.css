@@ -84,9 +84,11 @@
     padding: 0;
   } 
 
-  .gy-home-tests-slider .slick-list  { 
+  .gy-home-tests-slider .slick-list  {
+   
     padding-bottom: 7rem; 
     padding-top: 7rem; 
+  
     
   
   } 

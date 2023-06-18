@@ -1,53 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
 
-.ThridDivContent {
-  text-align: center;
-}
+
 
 .OurMissionDiv {
   position: relative;
   overflow: hidden;
-  padding-bottom: 300px;
-  margin-bottom: 200px;
+
+  margin-bottom: 7rem;
 }
 
-.ContentWrapper {
-  width: 70%;
-  display: inline-block;
-  margin: auto;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: left;
-}
 
-.ContentWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
+.ContentWrapper{
   display: flex;
-  -webkit-box-pack: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: start;
+  
 }
 
-
-
-.ThridDivImg {
-  position: absolute;
-  width: 1300px;
-
-  left: -80px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: -1;
-}
 
 .ThridDivTitle {
   font-family: "Montserrat", sans-serif;
@@ -86,38 +56,113 @@
   color: #000309;
 }
 
+
+
+.GridSystem{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  
+}
+
+.Card{
+  width: 17rem;
+  height: 100%;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+ 
+}
+.moveDownCard{
+  transform: translate3d(0,3rem,0);
+}
+.firstCard{
+  background-color: #ff7700;
+}
+.secondCard{
+  background-color: #efdff7;
+}
+.thirdCard{
+  background-color: #c6e6fd;
+}
+.fourthCard{
+  background-color: #00438b;
+  text-align: center;
+}
+
+.TextDivWrapper{
+  width: 40%;
+
+}
+.ThirdDivH3{
+  margin: 0.5rem 0;
+}
+.text-white{
+  color: white;
+}
+.text-purple{
+  color: #b17cc6;
+}
+.text-blue{
+  color: #63b0e3;
+}
+
 @media (max-width:990px){
   .OurMissionDiv{
     left: -8px;
     padding-bottom: 0;
-  margin-bottom: 5rem;
+    margin-bottom: 5rem;
   }
-  .ContentWrapper{
-    display: grid;
-    position: relative;
-    gap: 3rem;
-    
-  }
-  .ThridDivImg{
-    width: 100%;
-    position: relative;
-    left: -80px;
-    top: 0;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -o-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    z-index: -1;
-  }
-  .ContentWrapper{
-    width: 100%;
-  }
-  .TextWraper{
-    width: 100%;
   
-  }
+  
+ 
   .ThridDivTitle{
     text-align: center;
+  }
+}
+@media (max-width:1300px){
+  .ContentWrapper{
+    flex-direction: column;
+  }
+  
+.TextDivWrapper{
+  width: 98%;
+  text-align: center;
+  margin: auto;
+}
+.GridSystem{
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+}
+
+@media(max-width:600px){
+  .Card{
+    width: 12rem;
+  }
+}
+@media(max-width:420px){
+  .Card{
+    width: 10rem;
+  }
+}
+@media(max-width:320px){
+  .Card{
+    width: 9rem;
+    
+  }
+  .GridSystem{
+    position: relative;
+    left: 9px;
+    margin: auto;
+    margin-bottom: 3rem;
   }
 }

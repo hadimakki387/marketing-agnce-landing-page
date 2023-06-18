@@ -2,12 +2,9 @@
 import React, { useState } from "react";
 import "@/app/css/HamburgerMenu.css";
 
-function HamburgerMenu() {
-    const [clicked,setClicked] = useState(false)
-    const ToggleClass = ()=>{
-        setClicked(!clicked)
-        
-    }
+function HamburgerMenu(props) {
+    const clicked = props.clicked
+    console.log(props)
   return (
     <>
       <svg>
@@ -19,7 +16,7 @@ function HamburgerMenu() {
     </filter>
   </defs>
 </svg>
-<div className="plates HamburgerMenu" onClick={ToggleClass}>
+<div className="plates HamburgerMenu" onClick={props.FF}>
   <div className={!clicked?"plate plate1 ":"plate plate1 active"} >
     <svg className="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
       <path className="line line1" d="M 30,65 H 70"/>

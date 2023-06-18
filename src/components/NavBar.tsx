@@ -1,17 +1,34 @@
+"use client"
 import Link from "next/link";
 import React from "react";
 import HamburgerMenu from "./Home/HamburgerMenu";
+import { keyframes } from "@emotion/react";
+import { Reveal } from "react-awesome-reveal";
 
 function NavBar(props) {
- 
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, -25%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
+  
   return (
     <div className="gy-header-wrap " >
+      <Reveal keyframes={customAnimation} triggerOnce>
       <Link className="headerLogo " href="" >
         <p className="LOGO">LOGO</p>
       </Link>
-      <div className="gy-header-menu "onClick={props.onClick}>
+      <div className="gy-header-menu ">
+      
         <ul className="FirstDivUl">
-          <li className="menu-item">
+          
+            <li className="menu-item">
             <Link href="" className="LinkNoDecoration">
               Our Story
             </Link>
@@ -36,11 +53,14 @@ function NavBar(props) {
               Reviews
             </Link>
           </li>
+          
+          
         </ul>
-        <HamburgerMenu />
+        
+        <HamburgerMenu FF={props.onClick} clicked={props.clicked}/>
       </div>
       
-
+      </Reveal>
       <div className="gy-header-trigger ">
         <i className=""></i>
         <i className=""></i>

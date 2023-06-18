@@ -10,12 +10,12 @@
   opacity: 0;
   transition: all 700ms ease-in-out;
   overflow: hidden;
-  background-image: url(https://www.growyouragency.com/wp-content/uploads/2019/04/whales-Grow-Your-Agency.png);
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-position-x: 29rem;
   font-weight: bold;
+ 
 }
 
 .slideIn {
@@ -29,7 +29,6 @@
   transform: translateX(0%);
   transition: all 700ms ease-in-out;
   overflow: hidden;
-  background-image: url(https://www.growyouragency.com/wp-content/uploads/2019/04/whales-Grow-Your-Agency.png);
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: right bottom;

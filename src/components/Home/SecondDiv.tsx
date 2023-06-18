@@ -3,6 +3,7 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import "@/app/css/SecondDiv.css";
 import CarouselItem from "../CarouselItem";
 import Marquee from "react-fast-marquee";
+import { Fade } from "react-awesome-reveal";
 
 function SecondDiv() {
   const arr = [1, 2, 3, 4, 5, 6];
@@ -10,6 +11,12 @@ function SecondDiv() {
   const [itemWidth, setItemWidth] = useState();
   const [count, setCount] = useState(0);
   const slickTrackRef = useRef(null);
+  const direction = {
+    Top : "top",
+    Bottom : "bottom",
+    Left : "left",
+    Right : "right",
+  }
 
   return (
     <div className="gy-home-tests">
@@ -17,7 +24,9 @@ function SecondDiv() {
         <div className="gy-secondDiv-row">
           <div className="gy-home-tests-slider slick-initialized slick-slider">
             <div className="slick-list draggable">
-              <div className="slick-track style-ftT9V" id="style-ftT9V">
+              
+              <Fade delay={700} triggerOnce>
+                <div className="slick-track style-ftT9V" id="style-ftT9V">
                 <Marquee autoFill={true}>
                   <div
                     className="gy-home-tests-slide slick-slide slick-cloned style-bDXxk"
@@ -31,6 +40,8 @@ function SecondDiv() {
                   </div>
                 </Marquee>
               </div>
+              </Fade>
+              
             </div>
           </div>
         </div>

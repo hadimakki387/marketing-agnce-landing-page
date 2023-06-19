@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap'); 
 @media all{ 
-  div { 
-    font-family: "Montserrat", sans-serif; 
-    font-size: 18px; 
-    line-height: 1.8; 
-    margin: 0; 
-    padding: 0; 
-    border: 0; 
-    color: #000309;
-  } 
+
 
   .gy-content { 
     text-align: center;
@@ -329,11 +321,7 @@
 #style-Igz72.style-Igz72 {  
    display: block;  
 } 
-@media (max-width:1270px){
-  .gy-home-tests-slider{
-    left: 300px;
-  }
-}
+
 @media (max-width:990px){
   
   .gy-home-tests-slider{

@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
 
-
-
 .OurMissionDiv {
   position: relative;
   overflow: hidden;
@@ -9,15 +7,11 @@
   margin-bottom: 7rem;
 }
 
-
-
-.ContentWrapper{
+.ContentWrapper {
   display: flex;
   justify-content: space-evenly;
   align-items: start;
-  
 }
-
 
 .ThridDivTitle {
   font-family: "Montserrat", sans-serif;
@@ -56,17 +50,14 @@
   color: #000309;
 }
 
-
-
-.GridSystem{
+.GridSystem {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
-  
 }
 
-.Card{
+.Card {
   width: 17rem;
   height: 100%;
   border-radius: 8px;
@@ -78,93 +69,109 @@
   padding-top: 2rem;
   font-size: 20px;
   font-weight: bold;
- 
 }
-.Card img{
-
+.Card img {
   width: 6rem;
- 
 }
-.moveDownCard{
-  transform: translate3d(0,3rem,0);
+.moveDownCard {
+  transform: translate3d(0, 3rem, 0);
 }
-.firstCard{
+.firstCard {
   background-color: #ff7700;
 }
-.secondCard{
+.secondCard {
   background-color: #efdff7;
 }
-.thirdCard{
+.thirdCard {
   background-color: #c6e6fd;
 }
-.fourthCard{
+.fourthCard {
   background-color: #00438b;
   text-align: center;
 }
 
-.TextDivWrapper{
+.TextDivWrapper {
   width: 40%;
-
 }
-.ThirdDivH3{
+.ThirdDivH3 {
   margin: 0.5rem 0;
 }
-.text-white{
+.text-white {
   color: white;
 }
-.text-purple{
+.text-purple {
   color: #b17cc6;
 }
-.text-blue{
+.text-blue {
   color: #63b0e3;
 }
 
-@media (max-width:990px){
-  .OurMissionDiv{
+@media (max-width: 990px) {
+  .OurMissionDiv {
     left: -8px;
     padding-bottom: 0;
     margin-bottom: 5rem;
   }
-  
-  
- 
-  .ThridDivTitle{
+
+  .ThirdDivH2 {
+    font-size: 40px;
+  }
+
+  .ThridDivTitle {
     text-align: center;
   }
 }
-@media (max-width:1300px){
-  .ContentWrapper{
+@media (max-width: 1300px) {
+  .ContentWrapper {
     flex-direction: column;
   }
-  
-.TextDivWrapper{
-  width: 98%;
-  text-align: center;
-  margin: auto;
-}
-.GridSystem{
-  margin: auto;
-  margin-bottom: 3rem;
+
+  .TextDivWrapper {
+    width: 98%;
+    text-align: center;
+    margin: auto;
+  }
+  .GridSystem {
+    margin: auto;
+    margin-bottom: 3rem;
+  }
 }
 
-}
-
-@media(max-width:600px){
-  .Card{
+@media (max-width: 600px) {
+  .Card {
     width: 12rem;
   }
+  .ThirdDivP {
+    font-size: 16px;
+  }
 }
-@media(max-width:420px){
-  .Card{
+@media (max-width: 420px) {
+  .Card {
     width: 10rem;
   }
-}
-@media(max-width:320px){
-  .Card{
-    width: 9rem;
-    
+  .ThirdDivH2 {
+    font-size: 30px;
   }
-  .GridSystem{
+  .ThirdDivP {
+    font-size: 14px;
+  }
+  .GridSystem {
+    grid-template-columns: none;
+    grid-template-rows: none;
+    width: 80%;
+  }
+  .moveDownCard {
+    transform: translate3d(0, 0, 0);
+  }
+  .Card {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .Card {
+    width: 9rem;
+  }
+  .GridSystem {
     position: relative;
     left: 9px;
     margin: auto;

@@ -13,31 +13,33 @@ import Footer from "@/components/Home/Footer";
 import LazyLoad from "react-lazy-load";
 
 export default function Index() {
+
+  
   return (
-    <div className="main">
-      <LazyLoad offset={1000}>
+    <div className="main" >
+      
         <FirstDiv />
-      </LazyLoad>
-      <LazyLoad offset={1000}>
+      
+      
         <SecondDiv />
-      </LazyLoad>
-      <LazyLoad offset={1000}>
+      
+      
         <ThirdDiv />
-      </LazyLoad>
-      <LazyLoad offset={1000}>
+      
+      
         <FourthDiv />
-      </LazyLoad>
-      <LazyLoad offset={1000}>
+      
+      
         <FifthDiv />
-      </LazyLoad>
-      <LazyLoad offset={1000}>
+      
+      
         <SixthDiv />
-      </LazyLoad>
       
       
-      <LazyLoad offset={1000}>
+      
+      
         <Footer />
-      </LazyLoad>
+      
     </div>
   );
 }

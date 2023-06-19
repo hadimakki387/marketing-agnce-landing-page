@@ -27,8 +27,8 @@ function ThirdDiv() {
           <div className="TextDivWrapper">
             <Reveal keyframes={customAnimation} delay={500} triggerOnce>
               <section>
-                <h2>Welcome to our TikTok Followers Agency!</h2>
-                <p>
+                <h2 className="ThirdDivH2">Welcome to our TikTok Followers Agency!</h2>
+                <p className="ThirdDivP">
                   Are you a TikTok creator, influencer, or business looking to
                   rapidly grow your follower base? Look no further! Our digital
                   agency specializes in providing top-notch solutions to help
@@ -37,7 +37,7 @@ function ThirdDiv() {
               </section>
               <section>
                 <h3 className="ThirdDivH3">Maximize TikTok presence</h3>
-                <p>
+                <p className="ThirdDivP">
                   Unlock your TikTok potential with our expert agency services.
                   We craft viral content strategies, boost followers, and
                   enhance engagement. Elevate your brand&apos;s visibility on TikTok.
@@ -45,7 +45,7 @@ function ThirdDiv() {
               </section>
               <section>
                 <h3 className="ThirdDivH3">Strategic growth for influencers</h3>
-                <p>
+                <p className="ThirdDivP">
                   Expand your TikTok influence and monetize your content. Our
                   agency connects you with brands and sponsorship opportunities.
                   Achieve sustainable success as a TikTok influencer.

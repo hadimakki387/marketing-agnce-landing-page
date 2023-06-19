@@ -78,19 +78,22 @@ function FirstDiv() {
                   delay={500}
                   triggerOnce
                 >
-                  <h1 className=" snipcss0-5-5-6 ">
+                  <h1 className="HeaderH1 snipcss0-5-5-6 ">
                     We are Digital Agency &amp; Marketing
                   </h1>
-                  <p className="lead snipcss0-5-5-7">
+                  <p className="HeaderP lead snipcss0-5-5-7">
                     Dramatically grow customized potentialities vis-a-vis
                     synergistic alignments. Energistically drive team.
                   </p>
-                  <a
+                  <div className="ContantBtnDiv">
+                    <a
                     href="#"
-                    className="btn solid-btn btn-primary snipcss0-5-5-8"
+                    className="btn solid-btn  snipcss0-5-5-8"
                   >
                     Contact with us
                   </a>
+                  </div>
+                  
                 </Reveal>
 
                 <div className="client-section-wrap mt-5 snipcss0-5-5-9">

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../../NavBar";
 import Link from "next/link";
 import { keyframes } from "@emotion/react";
@@ -27,6 +27,14 @@ function FirstDiv({theme,themeF}:{theme:String,themeF:Function}) {
         transform: translate3d(0, 0, 0);
       }
     `;
+    const [src,setSrc] = useState("")
+    const [bg,setBg] = useState("")
+
+useEffect(()=>{
+  setSrc(theme===" color-white"?"/light.png":"/dark.png")
+  setBg(theme===" color-white"?"bg-dark":"")
+  
+},[theme])
 
   return (
     <>
@@ -34,8 +42,8 @@ function FirstDiv({theme,themeF}:{theme:String,themeF:Function}) {
         className=" pt-50 Header"
         
       >
-        <div className={!sideBar ? "SideBar" : "slideIn"}>
-          <div className={sideBar ? "content contentIn" : "content"}>
+        <div className={!sideBar ? "SideBar" : `slideIn `}>
+          <div className={sideBar ? `content contentIn ${bg}`  : "content "}>
             <div>
               <Reveal
                 keyframes={customAnimation}
@@ -47,6 +55,7 @@ function FirstDiv({theme,themeF}:{theme:String,themeF:Function}) {
                   onClick={() => {}}
                   clicked={sideBar}
                   FF={ToggleSideBar}
+                  theme={theme}
                 />
               </Reveal>
             </div>
@@ -63,6 +72,22 @@ function FirstDiv({theme,themeF}:{theme:String,themeF:Function}) {
                 <Link href="">Free Case Study</Link>
                 <Link href="">Reviews</Link>
               </Reveal>
+            </div>
+            <div>
+            <button
+                className="NoDecorationButton"
+                onClick={() => {
+                  themeF();
+                }}
+              >
+                <Image
+                  className="ThemeImg"
+                  height={100}
+                  width={100}
+                  alt=""
+                  src={src}
+                />
+              </button>
             </div>
           </div>
         </div>

@@ -48,7 +48,7 @@
     transition: all 1000ms ease-in-out; /* Add transition property and duration */
     transform: translateX(10%);
     opacity: 0;
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
   
   .contentIn {

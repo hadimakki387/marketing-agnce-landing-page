@@ -89,25 +89,12 @@ useEffect(()=>{
               </Link>
             </li>
             <li className="menu-item">
-              <button
-                className="NoDecorationButton"
-                onClick={() => {
-                  themeF();
-                }}
-              >
-                <Image
-                  className="ThemeImg"
-                  height={100}
-                  width={100}
-                  alt=""
-                  src={src}
-                />
-              </button>
+              
             </li>
           </Reveal>
         </ul>
 
-        <HamburgerMenu FF={onClick} clicked={clicked} onClick={() => {}} />
+        <HamburgerMenu FF={onClick} clicked={clicked} onClick={() => {}} theme={theme}/>
       </div>
 
       <div className="gy-header-trigger ">

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
-function FourthDiv() {
+function FourthDiv({theme}:{theme:String}) {
   const customAnimation = keyframes`
     from {
       opacity: 0;
@@ -22,24 +22,18 @@ function FourthDiv() {
       <div className="gy-content">
         <div className="AgencyLifeWrapper">
           <div className="AgencyLifeDivText">
-            
-            <Reveal
-              keyframes={customAnimation}
-              duration={1500}
-              delay={500}
-              triggerOnce
-            >
-              <h2 className="AgencyLifeH2 dark">Agency life.</h2>
-              <p className="AgencyLifeP dark">
+          
+              <h2 className={"AgencyLifeH2 " +theme}>Agency life.</h2>
+              <p className={"AgencyLifeP " +theme}>
                 We help total beginners with zero Social media experience &amp;
                 Increase there ingagement and protecting there accounts from
                 being baned
               </p>
-              <p className="AgencyLifeP dark">
+              <p className={"AgencyLifeP " +theme}>
                 Very few people understand how to setup their accounts right. We
                 place an emphasis on working ‘on’ the business and not ‘in’ it.
               </p>
-            </Reveal>
+            
           </div>
         </div>
       </div>

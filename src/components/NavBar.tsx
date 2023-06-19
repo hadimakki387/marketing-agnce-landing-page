@@ -1,11 +1,22 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HamburgerMenu from "./Home/HamburgerMenu";
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
+import Image from "next/image";
 
-function NavBar({ clicked, onClick }: { clicked: Boolean; onClick: Function }) {
+function NavBar({
+  clicked,
+  onClick,
+  theme,
+  themeF,
+}: {
+  clicked: Boolean;
+  onClick: Function;
+  theme: String;
+  themeF: Function;
+}) {
   const customAnimation = keyframes`
   from {
     opacity: 0;
@@ -28,12 +39,19 @@ function NavBar({ clicked, onClick }: { clicked: Boolean; onClick: Function }) {
     transform: translate3d(0, 0, 0);
   }
 `;
+const [src,setSrc] = useState("")
+
+useEffect(()=>{
+  setSrc(theme===" color-white"?"/light.png":"/dark.png")
+  
+},[theme])
+
 
   return (
     <div className="gy-header-wrap ">
-      <Reveal duration={500} keyframes={customAnimation2} triggerOnce >
+      <Reveal duration={500} keyframes={customAnimation2} triggerOnce>
         <Link className="headerLogo " href="">
-          <p className="LOGO dark">LOGO</p>
+          <p className={"LOGO " + theme}>LOGO</p>
         </Link>
       </Reveal>
 
@@ -46,29 +64,45 @@ function NavBar({ clicked, onClick }: { clicked: Boolean; onClick: Function }) {
             cascade
           >
             <li className="menu-item">
-              <Link href="" className="dark LinkNoDecoration ">
+              <Link href="" className={" LinkNoDecoration " + theme}>
                 Our Story
               </Link>
             </li>
             <li className="menu-item">
-              <Link href="" className="dark LinkNoDecoration">
+              <Link href="" className={" LinkNoDecoration " + theme}>
                 Philosophy
               </Link>
             </li>
             <li className="menu-item">
-              <Link href="" className="dark LinkNoDecoration">
+              <Link href="" className={" LinkNoDecoration " + theme}>
                 Resources
               </Link>
             </li>
             <li className="menu-item">
-              <Link href="" className="dark LinkNoDecoration">
+              <Link href="" className={" LinkNoDecoration " + theme}>
                 Free Case Study
               </Link>
             </li>
             <li className="menu-item">
-              <Link href="" className="dark LinkNoDecoration">
+              <Link href="" className={" LinkNoDecoration " + theme}>
                 Reviews
               </Link>
+            </li>
+            <li className="menu-item">
+              <button
+                className="NoDecorationButton"
+                onClick={() => {
+                  themeF();
+                }}
+              >
+                <Image
+                  className="ThemeImg"
+                  height={100}
+                  width={100}
+                  alt=""
+                  src={src}
+                />
+              </button>
             </li>
           </Reveal>
         </ul>

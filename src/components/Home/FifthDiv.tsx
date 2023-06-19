@@ -4,7 +4,7 @@ import Image from "next/image";
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
 
-function FifthDiv() {
+function FifthDiv({theme}:{theme:string}) {
   const customAnimation = keyframes`
     from {
       opacity: 0;
@@ -29,41 +29,36 @@ function FifthDiv() {
           />
         </div>
         <div className="EagleEyeItems">
-        <Reveal
-              keyframes={customAnimation}
-              duration={1500}
-              delay={500}
-              triggerOnce
-            >
-          <h2 className="EagleEyeTitle">Lorem ipsum.</h2>
+       
+          <h2 className={"EagleEyeTitle " +theme}>Lorem ipsum.</h2>
           <p>
-            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing.</strong>
+            <strong className={theme}>Lorem ipsum dolor sit amet, consectetur adipiscing.</strong>
           </p>
-          <p>
+          <p className={theme}>
             Lorem ipsum dolor sit amet consectetur adipiscing elit hac urna
             placerat, posuere pulvinar quis ridiculus sociosqu lacus faucibus
             dapibus aliquam magna, curae suscipit magnis vestibulum blandit
             phasellus per fames gravida.
           </p>
           <ul>
-            <li>
+            <li className={theme}>
               Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
               mauris habitant ullamcorper id felis scelerisque.
             </li>
-            <li>
+            <li className={theme}>
               Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
               mauris habitant ullamcorper id felis scelerisque.
             </li>
-            <li>
+            <li className={theme}>
               Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
               mauris habitant ullamcorper id felis scelerisque.
             </li>
-            <li>
+            <li className={theme}>
               Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
               mauris habitant ullamcorper id felis scelerisque.
             </li>
           </ul>
-          </Reveal>
+          
         </div>
       </div>
     </div>

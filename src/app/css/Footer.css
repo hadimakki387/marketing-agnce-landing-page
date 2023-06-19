@@ -70,7 +70,7 @@
     font-size: 16px; 
     line-height: 1.5; 
     color: white; 
-    padding-bottom: 0 !important; 
+    padding-bottom: 0 ; 
     font-weight: 300; 
     width: 33.3%; 
     position: relative; 
@@ -249,8 +249,8 @@
   
   }
   .contactLisLinks{
-    font-size: 12px !important;
-    font-weight: 500 !important;
+    font-size: 12px ;
+    font-weight: 500 ;
     
   }
   .gy-footer-bar-menu ul{

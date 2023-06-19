@@ -5,7 +5,7 @@ import Image from "next/image";
 import { keyframes } from "@emotion/react";
 import { Reveal } from "react-awesome-reveal";
 
-function Footer() {
+function Footer({theme}:{theme:string}) {
   const customAnimation = keyframes`
   from {
     opacity: 0;
@@ -22,22 +22,12 @@ function Footer() {
       <div className="FooterWraper">
         <div className="gy-footer-main">
           <div className="gy-footer-main-col">
-            <Reveal
-              keyframes={customAnimation}
-              duration={1500}
-              delay={1000}
-              triggerOnce
-            >
-              <span className="FooterLOGO dark">LOGO</span>
-            </Reveal>
+           
+              <span className="FooterLOGO ">LOGO</span>
+           
             <div className="gy-footer-main-menu">
               <ul className="FooterLis">
-                <Reveal
-                  keyframes={customAnimation}
-                  duration={1500}
-                  delay={1000}
-                  triggerOnce
-                >
+                
                   <li
                     id="menu-item-188"
                     className=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-188"
@@ -45,7 +35,7 @@ function Footer() {
                     <Link
                       href="https://www.growyouragency.com/"
                       aria-current="page"
-                      className="dark"
+                      className={theme}
                     >
                       Home
                     </Link>
@@ -56,7 +46,7 @@ function Footer() {
                   >
                     <Link
                       href="https://www.growyouragency.com/iman-gadzhi/"
-                      className="dark"
+                      className={theme}
                     >
                       Our Story
                     </Link>
@@ -67,7 +57,7 @@ function Footer() {
                   >
                     <Link
                       href="https://www.growyouragency.com/philosophy/"
-                      className="dark"
+                      className={theme}
                     >
                       Philosophy
                     </Link>
@@ -78,7 +68,7 @@ function Footer() {
                   >
                     <Link
                       href="https://growyouragency.com/resources/"
-                      className="dark"
+                      className={theme}
                     >
                       Resources
                     </Link>
@@ -89,32 +79,27 @@ function Footer() {
                   >
                     <Link
                       href="https://lp.growyouragency.com/beginner-business"
-                      className="dark"
+                      className={theme}
                     >
                       Free Case Study
                     </Link>
                   </li>
-                </Reveal>
+                
               </ul>
             </div>
           </div>
           <div className="gy-footer-main-col"></div>
         </div>
-        <Reveal
-          keyframes={customAnimation}
-          duration={1500}
-          delay={1000}
-          triggerOnce
-        >
+       
           <div className="gy-footer-bar">
-            <p className="dark">© 2019 Grow Your Agency. All rights reserved</p>
+            <p className={theme}>© 2019 Grow Your Agency. All rights reserved</p>
             <div className="gy-footer-bar-menu">
               <ul className="FooterContactLi">
                 <li
                   id="menu-item-1422"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1422"
                 >
-                  <Link href="https://www.growyouragency.com/contact-us/" className="dark contactLisLinks">
+                  <Link href="https://www.growyouragency.com/contact-us/" className={" contactLisLinks " + theme}>
                     Contact us
                   </Link>
                 </li>
@@ -122,7 +107,7 @@ function Footer() {
                   id="menu-item-208"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-208"
                 >
-                  <Link href="https://www.growyouragency.com/privacy/" className="dark contactLisLinks">
+                  <Link href="https://www.growyouragency.com/privacy/" className={" contactLisLinks " + theme}>
                     Privacy Policy
                   </Link>
                 </li>
@@ -130,7 +115,7 @@ function Footer() {
                   id="menu-item-209"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"
                 >
-                  <Link href="https://www.growyouragency.com/terms/" className="dark contactLisLinks">
+                  <Link href="https://www.growyouragency.com/terms/" className={" contactLisLinks " + theme}>
                     Terms of Service
                   </Link>
                 </li>
@@ -140,7 +125,7 @@ function Footer() {
               <Image width={200} height={200} alt="" src="/cards.png" />
             </div>
           </div>
-        </Reveal>
+        
       </div>
     </div>
   );

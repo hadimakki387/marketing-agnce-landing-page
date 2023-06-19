@@ -24,15 +24,13 @@
 
 
 .gy-header-wrap {
-  max-width: none !important;
-  -webkit-box-pack: space-around !important;
-  -ms-flex-pack: space-around !important;
-  justify-content: space-around !important;
+  max-width: none ;
+  -webkit-box-pack: space-around ;
+  -ms-flex-pack: space-around ;
+  justify-content: space-around ;
 }
 
-.gy-header-wrap {
-  max-width: 1050px;
-}
+
 
 a {
   font-family: "Montserrat", sans-serif;
@@ -203,7 +201,7 @@ a:focus:after {
 }
 @media (max-width: 575px) {
   .gy-header-wrap{
-    justify-content: space-between !important;
+    justify-content: space-between ;
 
     margin: auto;
   }

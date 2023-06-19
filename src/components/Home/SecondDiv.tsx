@@ -5,7 +5,7 @@ import CarouselItem from "../CarouselItem";
 import Marquee from "react-fast-marquee";
 import { Fade } from "react-awesome-reveal";
 
-function SecondDiv() {
+function SecondDiv({theme}:{theme:string}) {
   const arr = [1, 2, 3, 4, 5, 6];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemWidth, setItemWidth] = useState();
@@ -25,22 +25,22 @@ function SecondDiv() {
           <div className="gy-home-tests-slider slick-initialized slick-slider">
             <div className="slick-list draggable">
               
-              <Fade delay={700} triggerOnce>
+             
                 <div className="slick-track style-ftT9V" id="style-ftT9V">
                 <Marquee autoFill={true}>
                   <div
-                    className="gy-home-tests-slide slick-slide slick-cloned style-bDXxk"
+                    className="gy-home-tests-slide slick-slide slick-cloned style-bDXxk "
                     style={{ opacity: 1 }}
                     data-slick-index="-3"
                     id="style-bDXxk"
                     aria-hidden="true"
                     ref={slickTrackRef}
                   >
-                    <CarouselItem />
+                    <CarouselItem theme={theme}/>
                   </div>
                 </Marquee>
               </div>
-              </Fade>
+             
               
             </div>
           </div>

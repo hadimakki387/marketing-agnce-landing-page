@@ -7,8 +7,9 @@ import { Reveal } from "react-awesome-reveal";
 import FloatingImg from "./FloatingImg";
 import HamburgerMenu from "../HamburgerMenu";
 import Icons from "./Icons";
+import Image from "next/image";
 
-function FirstDiv() {
+function FirstDiv({theme,themeF}:{theme:String,themeF:Function}) {
   const [sideBar, setSideBar] = useState(false);
   const ToggleSideBar = () => {
     setSideBar(!sideBar);
@@ -49,7 +50,7 @@ function FirstDiv() {
                 />
               </Reveal>
             </div>
-            <div className="LinksInSideBar dark">
+            <div className="LinksInSideBar ">
               <Reveal
                 keyframes={customAnimation}
                 duration={300}
@@ -65,9 +66,11 @@ function FirstDiv() {
             </div>
           </div>
         </div>
-
-        <NavBar onClick={ToggleSideBar} clicked={sideBar} />
-        <div className="container ">
+        <div>
+          
+        </div>
+        <NavBar onClick={ToggleSideBar} clicked={sideBar} theme={theme} themeF={themeF}/>
+        <div className="container " >
           
           <div className="row align-items-center justify-content-between pt-5 pb-5 snipcss0-2-2-3">
             <div className="col-md-12 col-lg-6 snipcss0-3-3-4">
@@ -78,10 +81,10 @@ function FirstDiv() {
                   delay={500}
                   triggerOnce
                 >
-                  <h1 className="HeaderH1 snipcss0-5-5-6 ">
+                  <h1 className={"HeaderH1 snipcss0-5-5-6 "+theme} >
                     We are Digital Agency &amp; Marketing
                   </h1>
-                  <p className="HeaderP lead snipcss0-5-5-7">
+                  <p className={"HeaderP lead snipcss0-5-5-7 "+theme}>
                     Dramatically grow customized potentialities vis-a-vis
                     synergistic alignments. Energistically drive team.
                   </p>
@@ -103,7 +106,7 @@ function FirstDiv() {
                     delay={800}
                     triggerOnce
                   >
-                    <p className="snipcss0-6-9-10">
+                    <p className={"snipcss0-6-9-10 " +theme}>
                       Trusted by companies like:
                     </p>
                     <Icons />

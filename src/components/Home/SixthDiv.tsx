@@ -4,7 +4,7 @@ import "@/app/css/SixthDiv.css";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
-function SixthDiv() {
+function SixthDiv({theme}:{theme:String}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -30,51 +30,40 @@ function SixthDiv() {
     transform: translate3d(0, 0, 0);
   }
 `;
+const [color,setColor]= useState("")
+useEffect(()=>{
+  setColor(theme===" color-white"?"ContactUsDivDark":"ContactUsDiv")
+},[theme])
+
 
   return (
-    <div className="ContactUsDiv">
+    <div className={color}>
        
       <div className="ContactUs">
      
         <div className="TextForm">
           <div>
-          <Reveal
-                keyframes={customAnimation}
-                duration={1500}
-                delay={1000}
-                triggerOnce
-              >
-            <h2 className="FormH2">Looking for a excellent Tiktok Agency?</h2>
-          <p className="FormP">
+          
+            <h2 className={"FormH2 " +theme}>Looking for a excellent Tiktok Agency?</h2>
+          <p className={"FormP " +theme}>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ac eu mattis
             placerat ligula et semper imperdiet, mauris sem dis erat auctor
             inceptos ad in nisl bibendum pretium feugiat natoque consequat.
           </p>
-          </Reveal>
+          
           </div>
           <div className="ContactsInfo">
-          <Reveal
-                keyframes={customAnimation}
-                duration={1500}
-                delay={1000}
-                triggerOnce
-              >
-            <p className="ContactsInfoP">Phone: +1234567890123</p>
-            <p className="ContactsInfoP">
+          
+            <p className={"ContactsInfoP " +theme}>Phone: +1234567890123</p>
+            <p className={"ContactsInfoP " +theme}>
               Email:Email: email@yourdomain.com
             </p>
-            </Reveal>
+            
           </div>
           
         </div>
-        <Reveal
-                keyframes={customAnimation}
-                duration={1500}
-                delay={1000}
-                triggerOnce
-                className="Form"
-              >
-                <div className="Form TextInput">
+        
+                <div className="Form ">
         
           <input
             type="text"
@@ -99,7 +88,7 @@ function SixthDiv() {
           <button className="SubmitButton" onClick={handleSend}>Send</button>
           
         </div>
-              </Reveal>
+              
         
         
       </div>

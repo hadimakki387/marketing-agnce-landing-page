@@ -120,7 +120,7 @@
     margin-left: auto; 
     margin-right: auto;
     z-index: 100;
-    background-color: white;
+   
   } 
 
   .slick-slider .slick-track  { 
@@ -189,7 +189,6 @@
     -webkit-box-align: center; 
     -ms-flex-align: center; 
     align-items: center; 
-    background-color: white; 
     border-radius: 15px; 
     min-height: 370px; 
     padding-left: 70px; 

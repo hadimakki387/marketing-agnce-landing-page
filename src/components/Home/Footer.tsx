@@ -31,7 +31,7 @@ function Footer() {
               <span className="FooterLOGO dark">LOGO</span>
             </Reveal>
             <div className="gy-footer-main-menu">
-              <ul>
+              <ul className="FooterLis">
                 <Reveal
                   keyframes={customAnimation}
                   duration={1500}
@@ -109,12 +109,12 @@ function Footer() {
           <div className="gy-footer-bar">
             <p className="dark">© 2019 Grow Your Agency. All rights reserved</p>
             <div className="gy-footer-bar-menu">
-              <ul>
+              <ul className="FooterContactLi">
                 <li
                   id="menu-item-1422"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1422"
                 >
-                  <Link href="https://www.growyouragency.com/contact-us/" className="dark">
+                  <Link href="https://www.growyouragency.com/contact-us/" className="dark contactLisLinks">
                     Contact us
                   </Link>
                 </li>
@@ -122,7 +122,7 @@ function Footer() {
                   id="menu-item-208"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-208"
                 >
-                  <Link href="https://www.growyouragency.com/privacy/" className="dark">
+                  <Link href="https://www.growyouragency.com/privacy/" className="dark contactLisLinks">
                     Privacy Policy
                   </Link>
                 </li>
@@ -130,7 +130,7 @@ function Footer() {
                   id="menu-item-209"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"
                 >
-                  <Link href="https://www.growyouragency.com/terms/" className="dark">
+                  <Link href="https://www.growyouragency.com/terms/" className="dark contactLisLinks">
                     Terms of Service
                   </Link>
                 </li>

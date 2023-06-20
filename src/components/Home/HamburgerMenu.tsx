@@ -8,7 +8,7 @@ function HamburgerMenu({clicked,FF,onClick,theme}:{clicked:Boolean,FF:Function,o
   useEffect(()=>{
     setStroke(theme === " color-white"?"stroke-white":"")
   },[theme])
-  console.log(stroke)
+
   return (
     <>
       <svg className="">

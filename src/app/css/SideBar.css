@@ -41,7 +41,7 @@
 
 .content {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     height: 100%;
     gap: 2rem;
@@ -49,6 +49,7 @@
     transform: translateX(10%);
     opacity: 0;
     padding-top: 2rem;
+
   }
   
   .contentIn {
@@ -66,5 +67,6 @@
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    margin-top: 2rem;
   }
   

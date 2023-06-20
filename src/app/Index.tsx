@@ -12,6 +12,7 @@ import EightThDiv from "@/components/Home/EightThDiv";
 import Footer from "@/components/Home/Footer";
 import LazyLoad from "react-lazy-load";
 import { useEffect, useState } from "react";
+import Testemonials from "@/components/Home/Testemonials";
 
 export default function Index() {
   const [theme,setTheme]=useState(false)
@@ -27,7 +28,6 @@ export default function Index() {
     setBg(theme===true?" bg-dark": " bg-white")
   },[theme])
 
-console.log(theme)
   return (
     <div className={"main " + bg}>
       <LazyLoad >
@@ -45,6 +45,9 @@ console.log(theme)
       </LazyLoad>
       <LazyLoad>
         <FifthDiv theme={color}/>
+      </LazyLoad>
+      <LazyLoad>
+        <Testemonials theme={color}/>
       </LazyLoad>
       <LazyLoad>
         <SixthDiv theme={color}/>

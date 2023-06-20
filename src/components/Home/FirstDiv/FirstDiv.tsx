@@ -14,7 +14,7 @@ function FirstDiv({theme,themeF}:{theme:String,themeF:Function}) {
   const ToggleSideBar = () => {
     setSideBar(!sideBar);
     document.body.classList.toggle("no-scroll");
-    console.log("clicked");
+
   };
   const customAnimation = keyframes`
       from {
@@ -74,7 +74,13 @@ useEffect(()=>{
               </Reveal>
             </div>
             <div>
-            <button
+            <Reveal
+                keyframes={customAnimation}
+                duration={300}
+                delay={800}
+                cascade
+              >
+                <button
                 className="NoDecorationButton"
                 onClick={() => {
                   themeF();
@@ -88,6 +94,8 @@ useEffect(()=>{
                   src={src}
                 />
               </button>
+              </Reveal>
+            
             </div>
           </div>
         </div>

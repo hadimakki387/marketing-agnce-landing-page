@@ -16,9 +16,11 @@
 }
 
 .ThemeImg{
-  width: 2rem;
+  width: 80px;
+  height: 80px;
   position: relative;
   top: 0.65rem;
+  padding: 1rem;
 }
 
 .NoDecorationButton{

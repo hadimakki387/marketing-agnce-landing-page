@@ -89,6 +89,20 @@ useEffect(()=>{
               </Link>
             </li>
             <li className="menu-item">
+              <button
+                className="NoDecorationButton"
+                onClick={() => {
+                  themeF();
+                }}
+              >
+                <Image
+                  className="ThemeImg"
+                  height={100}
+                  width={100}
+                  alt=""
+                  src={src}
+                />
+              </button>
               
             </li>
           </Reveal>

@@ -9,7 +9,7 @@ html{
   position: relative;
   transform: translateY(-10%) ;
   opacity: 0;
-  transition: all 1s ;
+  transition: all 0.5s ;
 }
 .active{
   transform: translateY(0) ;
@@ -47,6 +47,13 @@ html{
   -webkit-box-pack: space-around ;
   -ms-flex-pack: space-around ;
   justify-content: space-around ;
+  position: fixed;
+  padding-top: 2rem;
+  top: 0;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.712);
+  backdrop-filter: blur(10px);
+  z-index: 2;
 }
 
 
@@ -185,9 +192,9 @@ a:focus:after {
   font-size: 40px;
   color: white;
   font-weight: 400;
-  position: relative;
-    top: 1.3rem;
+
     text-align: center;
+    padding-bottom: 0;
     
 }
 .Wave{

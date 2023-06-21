@@ -40,15 +40,16 @@ function NavBar({
   }
 `;
 const [src,setSrc] = useState("")
+const [BG,setBG] = useState("")
 
 useEffect(()=>{
   setSrc(theme===" color-white"?"/light.png":"/dark.png")
-  
+  setBG(theme===" color-white"?"bg-navbar-dark ":"")
 },[theme])
 
 
   return (
-    <div className="gy-header-wrap ">
+    <div className={"gy-header-wrap "+BG}>
       <Reveal duration={500} keyframes={customAnimation2} triggerOnce>
         <Link className="headerLogo " href="">
           <p className={"LOGO " + theme}>LOGO</p>

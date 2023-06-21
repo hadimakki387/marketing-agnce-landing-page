@@ -15,7 +15,7 @@
   width: 60%;
   margin: auto;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin-top: 5rem;
   font-size: 45px;
 }

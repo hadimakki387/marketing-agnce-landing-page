@@ -42,7 +42,7 @@
 .content {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     height: 100%;
     gap: 2rem;
     transition: all 1000ms ease-in-out; /* Add transition property and duration */

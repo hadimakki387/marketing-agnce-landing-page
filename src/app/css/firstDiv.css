@@ -85,7 +85,7 @@ a {
 
 .FirstDivUl {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 2rem;
   box-sizing: border-box;

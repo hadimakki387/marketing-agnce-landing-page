@@ -25,6 +25,7 @@ const Testemonials = ({ theme }: { theme: String }) => {
                 duration={500}
                 delay={800}
                 cascade
+                triggerOnce
               >
         {tests.map((test, index) => {
           return (

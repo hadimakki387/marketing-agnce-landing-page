@@ -18,7 +18,7 @@ const Testemonials = ({ theme }: { theme: String }) => {
 `;
   return (
     <Fragment>
-      <h1 className={"OurWork " + theme}>Hear from Our Delighted Clients:</h1>
+      <h1 className={"OurWork reveal" + theme}>Hear from Our Delighted Clients:</h1>
       <div className="Testemonials">
         
           {tests.map((test, index) => {

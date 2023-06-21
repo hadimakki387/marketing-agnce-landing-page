@@ -153,6 +153,7 @@ h2 {
 @media (max-width: 990px) {
   .EagleEyeWraper {
     display: grid;
+    gap: 2rem;
   }
   .EagleEyeImg {
     position: relative;

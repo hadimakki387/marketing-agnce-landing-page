@@ -123,7 +123,7 @@ useEffect(()=>{
                   </p>
                   <div className="ContantBtnDiv">
                     <a
-                    href="#"
+                    href="#Contact"
                     className="btn solid-btn  snipcss0-5-5-8"
                   >
                     Contact with us

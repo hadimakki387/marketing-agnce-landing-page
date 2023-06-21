@@ -1,20 +1,24 @@
 .color-dark{
+    transition: all 0.3s ease-in-out !important;
     color:black !important
 }
 .color-white{
+    transition: all 0.3s ease-in-out !important;
     color: white !important;
 }
 
-.bg-dark{
-    transition: all 0.3 ease-in-out;
-    background-color: rgb(28, 33, 37);
-}
-.bg-card-dark{
-    transition: all 0.3 ease-in-out;
+.bg-dark {
+    transition: all 0.3s ease-in-out !important;
+    background-color: rgb(28, 33, 37) !important;
+  }
+  
+  .bg-card-dark {
+    transition: all 0.3s ease-in-out !important;
     background-color: hsl(207, 12%, 15%) !important;
-}
-
-.bg-white{
-    transition: all 0.3 ease-in-out;
-    background-color: white;
-}
+  }
+  
+  .bg-white {
+    transition: all 0.3s ease-in-out !important;
+    background-color: white !important;
+  }
+  

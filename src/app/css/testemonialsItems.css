@@ -1,4 +1,3 @@
-
 .Testemonials {
   width: 60%;
   grid-column-gap: 16px;
@@ -11,45 +10,14 @@
   display: grid;
   margin-top: 2rem;
 }
-@media (max-width:1480px){
-    .Testemonials{
-        width: 80%;
-    }
-    .OurWork{
-      width: 80% !important;
-    }
-}
-@media (max-width:950px){
-    .Testemonials{
-    grid-template-columns: 1fr 1fr;
-    }
-    ._3-card__name span{
-        font-size: 14px;
-    }
-    .OurWork{
-      font-size: 40px !important;
-    }
-}
-@media (max-width:780px){
-    .Testemonials{
-        grid-template-columns: 1fr ;
-    }
-    .OurWork{
-      font-size: 25px !important;
-    }
-}
 
-  
-  
-.OurWork{
+.OurWork {
   width: 60%;
   margin: auto;
   display: flex;
   justify-content: start;
   margin-top: 5rem;
   font-size: 45px;
- 
-
 }
 .collection-item {
   display: flex;
@@ -110,15 +78,41 @@ a:hover {
   font-size: 1em;
   margin-top: 1rem;
 }
-.CardP{
-    line-height: 1.4;
+.CardP {
+  line-height: 1.4;
 }
 
-.cardH1{
-    color: white;
-    position: relative;
-    bottom: 4.5rem;
-    left: 1.5rem;
-   
+.cardH1 {
+  color: white;
+  position: relative;
+  bottom: 4.5rem;
+  left: 1.5rem;
 }
 
+@media (max-width: 1480px) {
+  .Testemonials {
+    width: 80%;
+  }
+  .OurWork {
+    width: 80% !important;
+  }
+}
+@media (max-width: 950px) {
+  .Testemonials {
+    grid-template-columns: 1fr 1fr;
+  }
+  ._3-card__name span {
+    font-size: 14px;
+  }
+  .OurWork {
+    font-size: 40px !important;
+  }
+}
+@media (max-width: 780px) {
+  .Testemonials {
+    grid-template-columns: 1fr;
+  }
+  .OurWork {
+    font-size: 25px !important;
+  }
+}

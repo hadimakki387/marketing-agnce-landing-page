@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "@/app/css/FifthDiv.css";
 import Image from "next/image";
 import { keyframes } from "@emotion/react";
@@ -16,8 +16,12 @@ function FifthDiv({theme}:{theme:string}) {
       transform: translate3d(0, 0, 0);
     }
   `;
+
+
+  const targetRef = useRef(null);
+
   return (
-    <div className="EagleEye">
+    <div className="EagleEye" ref={targetRef}>
       <div className="EagleEyeWraper">
         <div className="EagleEyeItems">
           <Image

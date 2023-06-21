@@ -37,7 +37,7 @@ useEffect(()=>{
 
 
   return (
-    <div className={color}>
+    <div className={color} id="Contact">
        
       <div className="ContactUs">
      

@@ -14,6 +14,7 @@ import LazyLoad from "react-lazy-load";
 import { useEffect, useState } from "react";
 import Testemonials from "@/components/Home/Testemonials";
 
+
 export default function Index() {
   const [theme,setTheme]=useState(false)
   function themeF(){
@@ -27,6 +28,34 @@ export default function Index() {
     setColor(theme===true?" color-white":" color-dark")
     setBg(theme===true?" bg-dark": " bg-white")
   },[theme])
+
+  useEffect(() => {
+    function reveal() {
+      const reveals = document.querySelectorAll('.reveal');
+      const windowHeight = window.innerHeight;
+      const revealPoint = 150;
+
+      reveals.forEach((element) => {
+        const revealTop = element.getBoundingClientRect().top;
+        if (revealTop < windowHeight - revealPoint) {
+          setTimeout(()=>{
+            element.classList.add('active');
+          },700)
+          
+        } else {
+          element.classList.remove('active');
+        }
+      });
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', reveal);
+
+    // Cleanup: remove scroll event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', reveal);
+    };
+  }, []);
 
   return (
     <div className={"main " + bg}>

@@ -4,7 +4,7 @@ import "@/app/css/SixthDiv.css";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
-function SixthDiv({theme}:{theme:String}) {
+function SixthDiv({ theme }: { theme: String }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -30,41 +30,37 @@ function SixthDiv({theme}:{theme:String}) {
     transform: translate3d(0, 0, 0);
   }
 `;
-const [color,setColor]= useState("")
-useEffect(()=>{
-  setColor(theme===" color-white"?"ContactUsDivDark":"ContactUsDiv")
-},[theme])
-
+  const [color, setColor] = useState("");
+  useEffect(() => {
+    setColor(theme === " color-white" ? "ContactUsDivDark" : "ContactUsDiv");
+  }, [theme]);
 
   return (
     <div className={color} id="Contact">
-       
       <div className="ContactUs">
-     
         <div className="TextForm">
           <div>
-          
-            <h2 className={"FormH2 " +theme}>Looking for a excellent Tiktok Agency?</h2>
-          <p className={"FormP " +theme}>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ac eu mattis
-            placerat ligula et semper imperdiet, mauris sem dis erat auctor
-            inceptos ad in nisl bibendum pretium feugiat natoque consequat.
-          </p>
-          
+            <h2 className={"FormH2 reveal " + theme}>
+              Looking for a excellent Tiktok Agency?
+            </h2>
+            <p className={"FormP reveal " + theme}>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit ac eu
+              mattis placerat ligula et semper imperdiet, mauris sem dis erat
+              auctor inceptos ad in nisl bibendum pretium feugiat natoque
+              consequat.
+            </p>
           </div>
           <div className="ContactsInfo">
-          
-            <p className={"ContactsInfoP " +theme}>Phone: +1234567890123</p>
-            <p className={"ContactsInfoP " +theme}>
+            <p className={"ContactsInfoP reveal " + theme}>
+              Phone: +1234567890123
+            </p>
+            <p className={"ContactsInfoP reveal " + theme}>
               Email:Email: email@yourdomain.com
             </p>
-            
           </div>
-          
         </div>
-        
-                <div className="Form ">
-        
+
+        <div className="Form reveal">
           <input
             type="text"
             placeholder="Enter Your Name"
@@ -85,14 +81,11 @@ useEffect(()=>{
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          <button className="SubmitButton" onClick={handleSend}>Send</button>
-          
+          <button className="SubmitButton" onClick={handleSend}>
+            Send
+          </button>
         </div>
-              
-        
-        
       </div>
-      
     </div>
   );
 }

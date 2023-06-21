@@ -20,22 +20,15 @@ const Testemonials = ({ theme }: { theme: String }) => {
     <Fragment>
       <h1 className={"OurWork " + theme}>Hear from Our Delighted Clients:</h1>
       <div className="Testemonials">
-      <Reveal
-                keyframes={customAnimation}
-                duration={500}
-                delay={800}
-                cascade
-                triggerOnce
-              >
-        {tests.map((test, index) => {
-          return (
-            <div key={index} className="testemonial">
+        
+          {tests.map((test, index) => {
+            return (
+              <div key={index} className="testemonial reveal">
                 <TestemonialsItems theme={theme} />
-              
-            </div>
-          );
-        })}
-        </Reveal>
+              </div>
+            );
+          })}
+       
       </div>
     </Fragment>
   );

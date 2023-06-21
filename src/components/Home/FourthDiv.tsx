@@ -23,13 +23,13 @@ function FourthDiv({theme}:{theme:String}) {
         <div className="AgencyLifeWrapper">
           <div className="AgencyLifeDivText">
           
-              <h2 className={"AgencyLifeH2 " +theme}>Agency life.</h2>
-              <p className={"AgencyLifeP " +theme}>
+              <h2 className={"AgencyLifeH2 reveal " +theme}>Agency life.</h2>
+              <p className={"AgencyLifeP reveal " +theme}>
                 We help total beginners with zero Social media experience &amp;
                 Increase there ingagement and protecting there accounts from
                 being baned
               </p>
-              <p className={"AgencyLifeP " +theme}>
+              <p className={"AgencyLifeP reveal " +theme}>
                 Very few people understand how to setup their accounts right. We
                 place an emphasis on working ‘on’ the business and not ‘in’ it.
               </p>

@@ -23,7 +23,7 @@ function FifthDiv({theme}:{theme:string}) {
   return (
     <div className="EagleEye" ref={targetRef}>
       <div className="EagleEyeWraper">
-        <div className="EagleEyeItems">
+        <div className="EagleEyeItems reveal">
           <Image
             src="/studying.jpg"
             className="EagleEyeImg"
@@ -34,30 +34,30 @@ function FifthDiv({theme}:{theme:string}) {
         </div>
         <div className="EagleEyeItems">
        
-          <h2 className={"EagleEyeTitle " +theme}>Lorem ipsum.</h2>
+          <h2 className={"EagleEyeTitle reveal " +theme}>Lorem ipsum.</h2>
           <p>
-            <strong className={theme}>Lorem ipsum dolor sit amet, consectetur adipiscing.</strong>
+            <strong className={theme +" reveal"}>Lorem ipsum dolor sit amet, consectetur adipiscing.</strong>
           </p>
-          <p className={theme}>
+          <p className={theme+" reveal"}>
             Lorem ipsum dolor sit amet consectetur adipiscing elit hac urna
             placerat, posuere pulvinar quis ridiculus sociosqu lacus faucibus
             dapibus aliquam magna, curae suscipit magnis vestibulum blandit
             phasellus per fames gravida.
           </p>
           <ul>
-            <li className={theme}>
+            <li className={theme+" reveal"}>
               Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
               mauris habitant ullamcorper id felis scelerisque.
             </li>
-            <li className={theme}>
+            <li className={theme+" reveal"}>
               Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
               mauris habitant ullamcorper id felis scelerisque.
             </li>
-            <li className={theme}>
+            <li className={theme+" reveal"}>
               Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
               mauris habitant ullamcorper id felis scelerisque.
             </li>
-            <li className={theme}>
+            <li className={theme+" reveal"}>
               Lorem ipsum dolor sit amet consectetur adipiscing elit sociosqu,
               mauris habitant ullamcorper id felis scelerisque.
             </li>

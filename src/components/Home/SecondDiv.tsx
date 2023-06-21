@@ -3,7 +3,8 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import "@/app/css/SecondDiv.css";
 import CarouselItem from "../CarouselItem";
 import Marquee from "react-fast-marquee";
-import { Fade } from "react-awesome-reveal";
+
+
 
 function SecondDiv({theme}:{theme:string}) {
   const arr = [1, 2, 3, 4, 5, 6];
@@ -19,6 +20,7 @@ function SecondDiv({theme}:{theme:string}) {
   }
 
   return (
+<div className="reveal">
     <div className="gy-home-tests">
       <div className="gy-content">
         <div className="gy-secondDiv-row">
@@ -45,6 +47,7 @@ function SecondDiv({theme}:{theme:string}) {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

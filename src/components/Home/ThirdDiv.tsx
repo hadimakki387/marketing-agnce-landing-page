@@ -24,9 +24,10 @@ function ThirdDiv({theme}:{theme:String}) {
     <div className="OurMissionDiv ">
       <div className="ThridDivContent">
         <div className="ContentWrapper">
-          <div className="TextDivWrapper">
           
-              <section>
+          <div className="TextDivWrapper">
+          <div className="reveal">
+            <section>
                 <h2 className={"ThirdDivH2 "+theme}>Welcome to our TikTok Followers Agency!</h2>
                 <p className={"ThirdDivP "+theme}>
                   Are you a TikTok creator, influencer, or business looking to
@@ -35,7 +36,9 @@ function ThirdDiv({theme}:{theme:String}) {
                   you gain an army of engaged followers on TikTok.
                 </p>
               </section>
-              <section>
+          </div>
+          <div className="reveal">
+            <section>
                 <h3 className={"ThirdDivH3 "+theme}>Maximize TikTok presence</h3>
                 <p className={"ThirdDivP "+theme}>
                   Unlock your TikTok potential with our expert agency services.
@@ -43,7 +46,9 @@ function ThirdDiv({theme}:{theme:String}) {
                   enhance engagement. Elevate your brand&apos;s visibility on TikTok.
                 </p>
               </section>
-              <section>
+          </div>
+          <div className="reveal">
+            <section>
                 <h3 className={"ThirdDivH3 "+theme}>Strategic growth for influencers</h3>
                 <p className={"ThirdDivP "+theme}>
                   Expand your TikTok influence and monetize your content. Our
@@ -51,32 +56,37 @@ function ThirdDiv({theme}:{theme:String}) {
                   Achieve sustainable success as a TikTok influencer.
                 </p>
               </section>
+          </div>
+              
+         
+              
          
           </div>
           <div className="GridSystem">
             
-              <div className="Card firstCard">
+              <div className="Card firstCard reveal">
+                
                 <Image width={1000} height={1000} src="/bonus.png" alt="bonus" />
                 <LazyLoad>
                   <CountUp end={1600} duration={3} className="text-white" />
                 </LazyLoad>
                 <p className="text-white">Active Users</p>
               </div>
-              <div className="Card moveDownCard secondCard">
+              <div className="Card moveDownCard secondCard reveal">
                 <Image width={1000} height={1000} src="/headphone.png" alt="bonus" />
                 <LazyLoad>
                   <CountUp end={2500} duration={3} className="text-purple" />
                 </LazyLoad>
                 <p className="text-purple">Global client</p>
               </div>
-              <div className="Card thirdCard">
+              <div className="Card thirdCard reveal">
                 <Image width={1000} height={1000} src="/cup.png" alt="bonus" />
                 <LazyLoad>
                   <CountUp end={2150} duration={3} className="text-blue" />
                 </LazyLoad>
                 <p className="text-blue">Win award</p>
               </div>
-              <div className="Card  moveDownCard fourthCard">
+              <div className="Card  moveDownCard fourthCard reveal">
                 <Image width={1000} height={1000} src="/client.png" alt="bonus" />
                 <LazyLoad>
                   <CountUp end={2150} duration={3} className="text-white" />

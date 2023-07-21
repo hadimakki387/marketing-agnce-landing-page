@@ -172,6 +172,9 @@
   .Card {
     width: 100%;
   }
+  .Card img{
+    width: 4rem;
+  }
   
 }
 @media (max-width: 320px) {

@@ -11,6 +11,7 @@ function CarouselItem({theme}:{theme:string}) {
           src="/Mariah.jpg"
           width={50}
           height={50}
+          
         />
         <div className="gy-home-tests-slide-user-info">
           <span className={"gy-name " +theme}>Mariah Miller</span>

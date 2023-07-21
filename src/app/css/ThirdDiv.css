@@ -145,16 +145,21 @@
   .ThirdDivP {
     font-size: 16px;
   }
+  .OurMissionDiv{
+    left: 0;
+  }
 }
 @media (max-width: 420px) {
   .Card {
     width: 10rem;
   }
   .ThirdDivH2 {
-    font-size: 30px;
+    font-size: 25px;
+    margin: 0 0.5rem;
   }
   .ThirdDivP {
-    font-size: 14px;
+    font-size: 12px;
+    margin: 0 1rem;
   }
   .GridSystem {
     grid-template-columns: none;
@@ -167,6 +172,7 @@
   .Card {
     width: 100%;
   }
+  
 }
 @media (max-width: 320px) {
   .Card {

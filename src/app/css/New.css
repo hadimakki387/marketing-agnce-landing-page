@@ -356,6 +356,15 @@ a:hover {
     animation: move-four 6s ease-in-out infinite;
   }
 }
+@media (max-width:575px){
+.solid-btn{
+  padding: 0.5rem 1rem;
+  font-size: 10px;
+}
+.Trusted{
+  font-size: 16px;
+}
+}
 
 ul {
   margin-top: 0;

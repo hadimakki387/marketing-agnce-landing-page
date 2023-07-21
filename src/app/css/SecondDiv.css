@@ -205,7 +205,6 @@
     height: 25px; 
     bottom: 30px; 
     right: 50px; 
-    background-image: url("https://www.growyouragency.com/wp-content/themes/GrowYourAgency/dist/shark_icon.a44dd4eb.png"); 
     background-position: center; 
     background-size: contain; 
     background-repeat: no-repeat; 
@@ -371,4 +370,29 @@
   padding-right: 0; 
   text-align: left;
 }
+}
+
+@media (max-width: 575px){
+  .gy-home-tests-slide-feedback p  { 
+    font-size: 12px; 
+    
+  }
+  .gy-home-tests-slide-feedback{
+    min-height: 200px; 
+    padding-left: 25px; 
+   padding-right: 25px; 
+  }
+  .gy-home-tests-slider .slick-list{
+    padding-bottom: 0;
+  }
+  .gy-home-tests-slide-user img{
+    width: 50px;
+    height: 50px;
+  }
+  .gy-home-tests-slide-user{
+    padding-bottom: 1.5rem;
+  }
+  .slick-slide{
+    padding-bottom: 3rem;
+  }
 }

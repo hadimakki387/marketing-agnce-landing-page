@@ -10,7 +10,7 @@ function Icons() {
           width={85}
           height={85}
           alt="client"
-          className="img-fluid snipcss0-8-12-13"
+          className="img-fluid icons snipcss0-8-12-13"
         />
       </div>
 
@@ -20,7 +20,7 @@ function Icons() {
           width={85}
           height={85}
           alt="client"
-          className="img-fluid snipcss0-8-14-15"
+          className="img-fluid icons snipcss0-8-14-15"
         />
       </div>
 
@@ -30,7 +30,7 @@ function Icons() {
           width={85}
           height={85}
           alt="client"
-          className="img-fluid snipcss0-8-16-17"
+          className="img-fluid icons snipcss0-8-16-17"
         />
       </div>
 
@@ -40,7 +40,7 @@ function Icons() {
           width={85}
           height={85}
           alt="client"
-          className="img-fluid snipcss0-8-18-19"
+          className="img-fluid icons snipcss0-8-18-19"
         />
       </div>
     </div>

@@ -33,7 +33,7 @@ export default function Index() {
     function reveal() {
       const reveals = document.querySelectorAll('.reveal');
       const windowHeight = window.innerHeight;
-      const revealPoint = 150;
+      const revealPoint = 250;
 
       reveals.forEach((element) => {
         const revealTop = element.getBoundingClientRect().top;
@@ -42,19 +42,13 @@ export default function Index() {
             element.classList.add('active');
           },700)
           
-        } else {
-          element.classList.remove('active');
         }
       });
+      
     }
 
     // Add scroll event listener
     window.addEventListener('scroll', reveal);
-
-    // Cleanup: remove scroll event listener when component unmounts
-    return () => {
-      window.removeEventListener('scroll', reveal);
-    };
   }, []);
 
   return (

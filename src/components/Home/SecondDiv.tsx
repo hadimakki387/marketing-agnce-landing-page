@@ -29,7 +29,7 @@ function SecondDiv({theme}:{theme:string}) {
               
              
                 <div className="slick-track style-ftT9V" id="style-ftT9V">
-                <Marquee autoFill={true}>
+                <Marquee autoFill={true} pauseOnHover={true}>
                   <div
                     className="gy-home-tests-slide slick-slide slick-cloned style-bDXxk "
                     style={{ opacity: 1 }}

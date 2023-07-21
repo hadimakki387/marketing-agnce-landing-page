@@ -223,6 +223,12 @@ a:focus:after {
 
   
 }
+
+@media (max-width: 575px){
+  .gy-header-wrap{
+    padding:  0;
+  }
+}
 @media (max-width: 1600px) {
   .gy-header-menu li {
     padding-left: 30px;
@@ -234,6 +240,10 @@ a:focus:after {
     justify-content: space-between ;
 
     margin: auto;
+  }
+  .LOGO{
+    font-size: 25px;
+    margin-left: 1rem;
   }
   
 }

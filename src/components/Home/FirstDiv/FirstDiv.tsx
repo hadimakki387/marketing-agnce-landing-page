@@ -117,7 +117,7 @@ useEffect(()=>{
                   <h1 className={"HeaderH1 snipcss0-5-5-6 "+theme} >
                     We are Digital Agency &amp; Marketing
                   </h1>
-                  <p className={"HeaderP lead snipcss0-5-5-7 "+theme}>
+                  <p className={"HeaderP  snipcss0-5-5-7 "+theme}>
                     Dramatically grow customized potentialities vis-a-vis
                     synergistic alignments. Energistically drive team.
                   </p>
@@ -139,7 +139,7 @@ useEffect(()=>{
                     delay={800}
                     triggerOnce
                   >
-                    <p className={"snipcss0-6-9-10 " +theme}>
+                    <p className={"Trusted snipcss0-6-9-10 " +theme}>
                       Trusted by companies like:
                     </p>
                     <Icons />
